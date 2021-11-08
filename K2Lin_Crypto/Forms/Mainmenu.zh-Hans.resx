@@ -121,7 +121,7 @@
     <value>主选单</value>
   </data>
   <data name="tips.Text" xml:space="preserve">
-    <value>从右侧选择一个选项以开始使用 ！</value>
+    <value>从左侧选择一个选项以开始使用 ！</value>
   </data>
   <data name="Welcome.Text" xml:space="preserve">
     <value>欢迎！</value>

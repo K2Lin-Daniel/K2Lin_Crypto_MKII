@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CryptoMain));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelDesktopPane = new System.Windows.Forms.Panel();
+            this.minimizebtn = new System.Windows.Forms.PictureBox();
+            this.maximizebtn = new System.Windows.Forms.PictureBox();
+            this.closebtn = new System.Windows.Forms.PictureBox();
             this.buttonAbout = new System.Windows.Forms.Button();
             this.buttonKeypairs = new System.Windows.Forms.Button();
             this.buttonDcryption = new System.Windows.Forms.Button();
             this.buttonEncryption = new System.Windows.Forms.Button();
             this.buttonMainmenu = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.minimizebtn = new System.Windows.Forms.PictureBox();
-            this.maximizebtn = new System.Windows.Forms.PictureBox();
-            this.closebtn = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizebtn)).BeginInit();
@@ -60,6 +60,53 @@
             this.panelMenu.Controls.Add(this.panelLogo);
             resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.Name = "panelMenu";
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.CadetBlue;
+            this.panelTitleBar.Controls.Add(this.minimizebtn);
+            this.panelTitleBar.Controls.Add(this.maximizebtn);
+            this.panelTitleBar.Controls.Add(this.closebtn);
+            this.panelTitleBar.Controls.Add(this.lblTitle);
+            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
+            this.panelTitleBar.ForeColor = System.Drawing.Color.Black;
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // lblTitle
+            // 
+            resources.ApplyResources(this.lblTitle, "lblTitle");
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Name = "lblTitle";
+            // 
+            // panelDesktopPane
+            // 
+            resources.ApplyResources(this.panelDesktopPane, "panelDesktopPane");
+            this.panelDesktopPane.Name = "panelDesktopPane";
+            // 
+            // minimizebtn
+            // 
+            resources.ApplyResources(this.minimizebtn, "minimizebtn");
+            this.minimizebtn.Image = global::K2Lin_Crypto.Properties.Resources.minimize_window_32;
+            this.minimizebtn.Name = "minimizebtn";
+            this.minimizebtn.TabStop = false;
+            this.minimizebtn.Click += new System.EventHandler(this.minimizebtn_Click);
+            // 
+            // maximizebtn
+            // 
+            resources.ApplyResources(this.maximizebtn, "maximizebtn");
+            this.maximizebtn.Image = global::K2Lin_Crypto.Properties.Resources.maximize_window_32;
+            this.maximizebtn.Name = "maximizebtn";
+            this.maximizebtn.TabStop = false;
+            this.maximizebtn.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // closebtn
+            // 
+            resources.ApplyResources(this.closebtn, "closebtn");
+            this.closebtn.Image = global::K2Lin_Crypto.Properties.Resources.close_window_32;
+            this.closebtn.Name = "closebtn";
+            this.closebtn.TabStop = false;
+            this.closebtn.Click += new System.EventHandler(this.closebtn_Click);
             // 
             // buttonAbout
             // 
@@ -117,53 +164,6 @@
             this.panelLogo.BackgroundImage = global::K2Lin_Crypto.Properties.Resources.K2Lin_Crypto_Logo;
             resources.ApplyResources(this.panelLogo, "panelLogo");
             this.panelLogo.Name = "panelLogo";
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.CadetBlue;
-            this.panelTitleBar.Controls.Add(this.minimizebtn);
-            this.panelTitleBar.Controls.Add(this.maximizebtn);
-            this.panelTitleBar.Controls.Add(this.closebtn);
-            this.panelTitleBar.Controls.Add(this.lblTitle);
-            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
-            this.panelTitleBar.ForeColor = System.Drawing.Color.Black;
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // minimizebtn
-            // 
-            resources.ApplyResources(this.minimizebtn, "minimizebtn");
-            this.minimizebtn.Image = global::K2Lin_Crypto.Properties.Resources.minimize_window_32;
-            this.minimizebtn.Name = "minimizebtn";
-            this.minimizebtn.TabStop = false;
-            this.minimizebtn.Click += new System.EventHandler(this.minimizebtn_Click);
-            // 
-            // maximizebtn
-            // 
-            resources.ApplyResources(this.maximizebtn, "maximizebtn");
-            this.maximizebtn.Image = global::K2Lin_Crypto.Properties.Resources.maximize_window_32;
-            this.maximizebtn.Name = "maximizebtn";
-            this.maximizebtn.TabStop = false;
-            this.maximizebtn.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // closebtn
-            // 
-            resources.ApplyResources(this.closebtn, "closebtn");
-            this.closebtn.Image = global::K2Lin_Crypto.Properties.Resources.close_window_32;
-            this.closebtn.Name = "closebtn";
-            this.closebtn.TabStop = false;
-            this.closebtn.Click += new System.EventHandler(this.closebtn_Click);
-            // 
-            // lblTitle
-            // 
-            resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Name = "lblTitle";
-            // 
-            // panelDesktopPane
-            // 
-            resources.ApplyResources(this.panelDesktopPane, "panelDesktopPane");
-            this.panelDesktopPane.Name = "panelDesktopPane";
             // 
             // CryptoMain
             // 

@@ -124,6 +124,6 @@
     <value>Mainmenu</value>
   </data>
   <data name="tips.Text" xml:space="preserve">
-    <value>Choose an option from the right!</value>
+    <value>Choose an option from the left!</value>
   </data>
 </root>

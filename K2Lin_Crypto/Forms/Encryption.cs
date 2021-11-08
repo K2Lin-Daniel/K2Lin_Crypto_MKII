@@ -17,8 +17,8 @@ namespace K2Lin_Crypto.Forms
                 lblReciverPubKey.Font = CryptoMain.zhHans_waresu;
                 lblSessionID.Font = CryptoMain.zhHans_waresu;
                 EncryptSessionID.Font = CryptoMain.zhHans_waresu;
-                lblTextEncrypt.Font = CryptoMain.zhHans_waresu;
-                lblCiperText.Font = CryptoMain.zhHans_waresu;
+                lblTextEncrypt.Font = CryptoMain.zhHans_waresuHighlight;
+                lblCiperText.Font = CryptoMain.zhHans_waresuHighlight;
                 ReceiverPublic.Font = CryptoMain.zhHans_waresu;
                 EncryptoText.Font = CryptoMain.zhHans_waresu;
                 EncryptButton.Font = CryptoMain.zhHans_waresu;
@@ -30,8 +30,8 @@ namespace K2Lin_Crypto.Forms
                 lblReciverPubKey.Font = CryptoMain.Eng_Comfortaa;
                 lblSessionID.Font = CryptoMain.Eng_Comfortaa;
                 EncryptSessionID.Font = CryptoMain.Eng_Comfortaa;
-                lblTextEncrypt.Font = CryptoMain.Eng_Comfortaa;
-                lblCiperText.Font = CryptoMain.Eng_Comfortaa;
+                lblTextEncrypt.Font = CryptoMain.Eng_ComfortaaHighlight;
+                lblCiperText.Font = CryptoMain.Eng_ComfortaaHighlight;
                 ReceiverPublic.Font = CryptoMain.zhHans_waresu;
                 EncryptoText.Font = CryptoMain.zhHans_waresu;
                 EncryptButton.Font = CryptoMain.Eng_Comfortaa;
