@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,10 +48,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>crypto MKII %281%29.ico</ApplicationIcon>
+    <ApplicationIcon>data-encryption.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>K2Lin_Crypto.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -84,11 +106,6 @@
       <DependentUpon>Mainmenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\AES-PBKDF2 Encrypt.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Modules\ThemeColor.cs" />
     <Compile Include="Crypto Main.cs">
       <SubType>Form</SubType>
@@ -98,22 +115,58 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Crypto Main.en.resx">
+      <DependentUpon>Crypto Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Crypto Main.resx">
       <DependentUpon>Crypto Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crypto Main.zh-Hans.resx">
+      <DependentUpon>Crypto Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\About.en.resx">
+      <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\About.zh-Hans.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Decryption.en.resx">
+      <DependentUpon>Decryption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Decryption.resx">
       <DependentUpon>Decryption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Decryption.zh-Hans.resx">
+      <DependentUpon>Decryption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Encryption.en.resx">
+      <DependentUpon>Encryption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Encryption.resx">
       <DependentUpon>Encryption.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Encryption.zh-Hans.resx">
+      <DependentUpon>Encryption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Keypairs.en.resx">
+      <DependentUpon>Keypairs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Keypairs.resx">
       <DependentUpon>Keypairs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Keypairs.zh-Hans.resx">
+      <DependentUpon>Keypairs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mainmenu.en.resx">
+      <DependentUpon>Mainmenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mainmenu.resx">
+      <DependentUpon>Mainmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mainmenu.zh-Hans.resx">
       <DependentUpon>Mainmenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -125,6 +178,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -176,7 +234,20 @@
     <None Include="Resources\unlock-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="crypto MKII %281%29.ico" />
+    <Content Include="data-encryption.ico" />
+    <None Include="Resources\DD icon 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

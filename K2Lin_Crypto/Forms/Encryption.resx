@@ -223,7 +223,7 @@
     <value>3</value>
   </data>
   <data name="lblSessionID.Text" xml:space="preserve">
-    <value>Session ID </value>
+    <value>Session ID</value>
   </data>
   <data name="&gt;&gt;lblSessionID.Name" xml:space="preserve">
     <value>lblSessionID</value>

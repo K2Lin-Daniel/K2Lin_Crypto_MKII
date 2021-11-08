@@ -1,9 +1,9 @@
-﻿using K2Lin_Crypto.Forms;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
+using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -26,7 +26,8 @@ namespace K2Lin_Crypto
 
         public static Font Eng_Comfortaa;
         public static Font Eng_ComfortaaHighlight;
-        public static Font CN_waresu;
+        public static Font zhHans_waresu;
+        public static Font zhHans_waresuHighlight;
         public static string PubKey;
         public static string PrivKey;
         public static string SessionID;
@@ -37,6 +38,65 @@ namespace K2Lin_Crypto
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         public CryptoMain()
+        {
+            GenerateNewKey();
+            DetectLanguage();
+            InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None; // no borders
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.ResizeRedraw, true); // this is to avoid visual artifacts
+            random = new Random();
+            LoadFonts();
+            string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
+            if (selLanguage.Contains("zh"))
+            {
+                buttonMainmenu.Font = zhHans_waresu;
+                buttonDcryption.Font = zhHans_waresu;
+                buttonEncryption.Font = zhHans_waresu;
+                buttonKeypairs.Font = zhHans_waresu;
+                buttonKeypairs.Font = zhHans_waresu;
+                buttonAbout.Font = zhHans_waresu;
+                lblTitle.Font = zhHans_waresu;
+            }
+            else
+            {
+                buttonMainmenu.Font = Eng_Comfortaa;
+                buttonDcryption.Font = Eng_Comfortaa;
+                buttonEncryption.Font = Eng_Comfortaa;
+                buttonKeypairs.Font = Eng_Comfortaa;
+                buttonKeypairs.Font = Eng_Comfortaa;
+                buttonAbout.Font = Eng_Comfortaa;
+                lblTitle.Font = Eng_Comfortaa;
+            }
+            OpenChildForm(new Forms.Mainmenu(), buttonMainmenu);
+        }
+
+        private static void DetectLanguage()
+        {
+            //Get system language, This method gets the regional language
+            //获取系统语言此方法获取区域语言
+            //string localLanguage = System.Threading.Thread.CurrentThread.CurrentCulture.Name;
+            //Get the default language when the system is installed
+            //系统安装时的默认语言
+            //string localLanguage = System.Globalization.CultureInfo.InstalledUICulture.Name;
+            //Get system regional language
+            //获取系统区域性语言
+            string localLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
+            if (localLanguage.Contains("zh"))
+            {
+                //Set the software language to Chinese
+                //设置软件语言为中文
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-Hans");
+            }
+            else
+            {
+                //Set to default language
+                //设置为默认语言
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("");
+            }
+        }
+
+        private static void GenerateNewKey()
         {
             RSACryptoServiceProvider csp = new RSACryptoServiceProvider(2048);
             csp.PersistKeyInCsp = false;
@@ -59,21 +119,7 @@ namespace K2Lin_Crypto
             string pubkeypath = "K2LinCrypto/PublicKey";
             string PubKeyXMLformat = PublicKey.SelectSingleNode(pubkeypath).InnerText;
             SessionID = Math.Abs(PubKeyXMLformat.GetHashCode()).ToString();
-            InitializeComponent();
-            this.Text = string.Empty;
-            this.ControlBox = false;
-            random = new Random();
-            LoadFonts();
-            buttonMainmenu.Font = Eng_Comfortaa;
-            buttonDcryption.Font = Eng_Comfortaa;
-            buttonEncryption.Font = Eng_Comfortaa;
-            buttonKeypairs.Font = Eng_Comfortaa;
-            buttonKeypairs.Font = Eng_Comfortaa;
-            buttonAbout.Font = Eng_Comfortaa;
-            lblTitle.Font = Eng_Comfortaa;
-            OpenChildForm(new Forms.Mainmenu(), buttonMainmenu);
         }
-
         //Methods
         private void LoadFonts()
         {
@@ -96,7 +142,8 @@ namespace K2Lin_Crypto
             AddFontMemResourceEx(fontPtrCN, (uint)Properties.Resources.waresu.Length, IntPtr.Zero, ref dummyCN);
             System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtrCN);
 
-            CN_waresu = new Font(fontsCN.Families[0], 16.0F);
+            zhHans_waresu = new Font(fontsCN.Families[0], 16.0F);
+            zhHans_waresuHighlight = new Font(fontsCN.Families[0], 20.0F);
         }
         private Color SelectThemeColor()
         {
@@ -120,7 +167,15 @@ namespace K2Lin_Crypto
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = Eng_ComfortaaHighlight;
+                    string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
+                    if (selLanguage.Contains("zh"))
+                    {
+                        currentButton.Font = zhHans_waresuHighlight;
+                    }
+                    else
+                    {
+                        currentButton.Font = Eng_ComfortaaHighlight;
+                    }
                     panelTitleBar.BackColor = color;
                     panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                     ThemeColor.PrimaryColor = color;
@@ -136,7 +191,15 @@ namespace K2Lin_Crypto
                 {
                     previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = Eng_Comfortaa;
+                    string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
+                    if (selLanguage.Contains("zh"))
+                    {
+                        previousBtn.Font = zhHans_waresu;
+                    }
+                    else
+                    {
+                        previousBtn.Font = Eng_Comfortaa;
+                    }
                 }
             }
         }

@@ -154,7 +154,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblPubKey.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="lblPrivKey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -190,7 +190,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblPrivKey.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="pubkey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -214,7 +214,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pubkey.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="privkey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -238,7 +238,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;privkey.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="Sel2048.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -271,7 +271,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Sel2048.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="Sel4096.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -304,7 +304,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Sel4096.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="Sel8192.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Sel8192.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="lblSelectLength.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -373,7 +373,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSelectLength.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="generate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -403,7 +403,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;generate.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="SessionID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -430,7 +430,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SessionID.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="lblSessionID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -466,19 +466,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSessionID.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <metadata name="SaveXML.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="SaveXML.Title" xml:space="preserve">
-    <value>选择 XML 文件以保存密钥对</value>
+    <value>Select the XML file to save the key pairs</value>
   </data>
   <metadata name="ReadXML.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>161, 17</value>
   </metadata>
   <data name="ReadXML.Title" xml:space="preserve">
-    <value>选择 XML 文件以读取密钥对</value>
+    <value>Select XML file to read key pairs</value>
   </data>
   <data name="lblKeyFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -514,7 +514,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblKeyFile.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="lblEncryptNote.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -523,19 +523,19 @@
     <value>True</value>
   </data>
   <data name="lblEncryptNote.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 8.25pt</value>
+    <value>Comfortaa, 16pt</value>
   </data>
   <data name="lblEncryptNote.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblEncryptNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 262</value>
+    <value>363, 262</value>
   </data>
   <data name="lblEncryptNote.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="lblEncryptNote.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 18</value>
+    <value>425, 35</value>
   </data>
   <data name="lblEncryptNote.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -556,7 +556,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblEncryptNote.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="Export.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -583,7 +583,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Export.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="Import.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -610,7 +610,73 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Import.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblTFA.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lblTFA.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTFA.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comfortaa, 16pt</value>
+  </data>
+  <data name="lblTFA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 369</value>
+  </data>
+  <data name="lblTFA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 35</value>
+  </data>
+  <data name="lblTFA.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblTFA.Text" xml:space="preserve">
+    <value>Two Factor Authentication Code:</value>
+  </data>
+  <data name="&gt;&gt;lblTFA.Name" xml:space="preserve">
+    <value>lblTFA</value>
+  </data>
+  <data name="&gt;&gt;lblTFA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTFA.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTFA.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="TFAPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="TFAPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comfortaa, 8pt</value>
+  </data>
+  <data name="TFAPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>496, 369</value>
+  </data>
+  <data name="TFAPassword.MaxLength" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="TFAPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="TFAPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 19</value>
+  </data>
+  <data name="TFAPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;TFAPassword.Name" xml:space="preserve">
+    <value>TFAPassword</value>
+  </data>
+  <data name="&gt;&gt;TFAPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TFAPassword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TFAPassword.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -620,6 +686,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Keypairs</value>

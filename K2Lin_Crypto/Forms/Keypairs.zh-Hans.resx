@@ -117,88 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Welcome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="generate.Text" xml:space="preserve">
+    <value>生成新密钥对</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Welcome.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblEncryptNote.Text" xml:space="preserve">
+    <value>导出的密钥仅本机可读</value>
   </data>
-  <data name="Welcome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lblKeyFile.Text" xml:space="preserve">
+    <value>密钥文件</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Welcome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 175</value>
+  <data name="lblPrivKey.Text" xml:space="preserve">
+    <value>当前私钥</value>
   </data>
-  <data name="Welcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
+  <data name="lblPubKey.Text" xml:space="preserve">
+    <value>当前公钥</value>
   </data>
-  <data name="Welcome.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="lblSelectLength.Text" xml:space="preserve">
+    <value>选择密钥长度</value>
   </data>
-  <data name="Welcome.Text" xml:space="preserve">
-    <value>Welcome!</value>
+  <data name="lblSessionID.Text" xml:space="preserve">
+    <value>当前的密钥对序列号</value>
   </data>
-  <data name="&gt;&gt;Welcome.Name" xml:space="preserve">
-    <value>Welcome</value>
+  <data name="ReadXML.Title" xml:space="preserve">
+    <value>选择 XML 文件以读取密钥对</value>
   </data>
-  <data name="&gt;&gt;Welcome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="SaveXML.Title" xml:space="preserve">
+    <value>选择 XML 文件以保存密钥对</value>
   </data>
-  <data name="&gt;&gt;Welcome.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Sel2048.Text" xml:space="preserve">
+    <value>2048</value>
   </data>
-  <data name="&gt;&gt;Welcome.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="Sel4096.Text" xml:space="preserve">
+    <value>4096</value>
   </data>
-  <data name="tips.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="tips.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tips.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tips.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 260</value>
-  </data>
-  <data name="tips.Size" type="System.Drawing.Size, System.Drawing">
-    <value>281, 12</value>
-  </data>
-  <data name="tips.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tips.Text" xml:space="preserve">
-    <value>Choose an option from the right!</value>
-  </data>
-  <data name="&gt;&gt;tips.Name" xml:space="preserve">
-    <value>tips</value>
-  </data>
-  <data name="&gt;&gt;tips.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tips.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tips.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
+  <data name="Sel8192.Text" xml:space="preserve">
+    <value>8192</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Mainmenu</value>
+    <value>密钥对</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Mainmenu</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblTFA.Text" xml:space="preserve">
+    <value>第二步身份验证密钥：</value>
   </data>
 </root>

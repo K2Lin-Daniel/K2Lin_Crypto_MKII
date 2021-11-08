@@ -17,7 +17,7 @@ namespace K2Lin_Crypto.Forms
         {
             InitializeComponent();
             label1.Font = CryptoMain.Eng_Comfortaa;
-            button1.Font = CryptoMain.CN_waresu;
+            button1.Font = CryptoMain.zhHans_waresu;
         }
 
         private void button1_Click(object sender, EventArgs e)

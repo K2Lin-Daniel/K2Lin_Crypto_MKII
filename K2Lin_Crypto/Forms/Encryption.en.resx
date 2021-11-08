@@ -117,88 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Welcome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="lblTextEncrypt.Text" xml:space="preserve">
+    <value>Text to Encrypt</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Welcome.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblSessionID.Text" xml:space="preserve">
+    <value>Session ID</value>
   </data>
-  <data name="Welcome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Welcome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 175</value>
-  </data>
-  <data name="Welcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="Welcome.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Welcome.Text" xml:space="preserve">
-    <value>Welcome!</value>
-  </data>
-  <data name="&gt;&gt;Welcome.Name" xml:space="preserve">
-    <value>Welcome</value>
-  </data>
-  <data name="&gt;&gt;Welcome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Welcome.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Welcome.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tips.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="tips.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tips.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tips.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 260</value>
-  </data>
-  <data name="tips.Size" type="System.Drawing.Size, System.Drawing">
-    <value>281, 12</value>
-  </data>
-  <data name="tips.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tips.Text" xml:space="preserve">
-    <value>Choose an option from the right!</value>
-  </data>
-  <data name="&gt;&gt;tips.Name" xml:space="preserve">
-    <value>tips</value>
-  </data>
-  <data name="&gt;&gt;tips.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tips.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tips.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
+  <data name="lblReciverPubKey.Text" xml:space="preserve">
+    <value>Reciver's Public Key</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Mainmenu</value>
+    <value>Encryption</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Mainmenu</value>
+  <data name="lblCiperText.Text" xml:space="preserve">
+    <value>Encrypted Text</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="EncryptButton.Text" xml:space="preserve">
+    <value>Encrypt!</value>
+  </data>
+  <data name="CopyEncryptedText.Text" xml:space="preserve">
+    <value>Copy Encrypted Text</value>
   </data>
 </root>

@@ -46,6 +46,8 @@
             this.lblEncryptNote = new System.Windows.Forms.Label();
             this.Export = new System.Windows.Forms.PictureBox();
             this.Import = new System.Windows.Forms.PictureBox();
+            this.lblTFA = new System.Windows.Forms.Label();
+            this.TFAPassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Export)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Import)).BeginInit();
             this.SuspendLayout();
@@ -155,10 +157,22 @@
             this.Import.TabStop = false;
             this.Import.Click += new System.EventHandler(this.Import_Click);
             // 
+            // lblTFA
+            // 
+            resources.ApplyResources(this.lblTFA, "lblTFA");
+            this.lblTFA.Name = "lblTFA";
+            // 
+            // TFAPassword
+            // 
+            resources.ApplyResources(this.TFAPassword, "TFAPassword");
+            this.TFAPassword.Name = "TFAPassword";
+            // 
             // Keypairs
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.TFAPassword);
+            this.Controls.Add(this.lblTFA);
             this.Controls.Add(this.Export);
             this.Controls.Add(this.Import);
             this.Controls.Add(this.lblEncryptNote);
@@ -202,5 +216,7 @@
         private System.Windows.Forms.Label lblEncryptNote;
         private System.Windows.Forms.PictureBox Import;
         private System.Windows.Forms.PictureBox Export;
+        private System.Windows.Forms.Label lblTFA;
+        private System.Windows.Forms.TextBox TFAPassword;
     }
 }

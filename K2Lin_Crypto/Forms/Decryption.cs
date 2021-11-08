@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -20,21 +14,39 @@ namespace K2Lin_Crypto.Forms
         {
             InitializeComponent();
             SessionID.Text = CryptoMain.SessionID;
-            SessionID.Font = CryptoMain.Eng_Comfortaa;
-            lblSessionID.Font = CryptoMain.Eng_Comfortaa;
-            lblDecryptedText.Font = CryptoMain.Eng_ComfortaaHighlight;
-            lblTextDecrypt.Font = CryptoMain.Eng_ComfortaaHighlight;
-            CopyPublicKey.Font = CryptoMain.Eng_Comfortaa;
-            CopyDecryptedText.Font = CryptoMain.Eng_Comfortaa;
-            DecryptButton.Font = CryptoMain.Eng_Comfortaa;
-            DecryptoResult.Font = CryptoMain.CN_waresu;
-            DecryptoText.Font = CryptoMain.CN_waresu;
-            SessionIDIncorrect.Font = CryptoMain.Eng_Comfortaa;
+            string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
+            if (selLanguage.Contains("zh"))
+            {
+                SessionID.Font = CryptoMain.zhHans_waresu;
+                lblSessionID.Font = CryptoMain.zhHans_waresu;
+                lblDecryptedText.Font = CryptoMain.zhHans_waresuHighlight;
+                lblTextDecrypt.Font = CryptoMain.zhHans_waresuHighlight;
+                CopyPublicKey.Font = CryptoMain.zhHans_waresu;
+                CopyDecryptedText.Font = CryptoMain.zhHans_waresu;
+                DecryptButton.Font = CryptoMain.zhHans_waresu;
+                DecryptoResult.Font = CryptoMain.zhHans_waresu;
+                DecryptoText.Font = CryptoMain.zhHans_waresu;
+                SessionIDIncorrect.Font = CryptoMain.zhHans_waresu;
+            }
+            else
+            {
+                SessionID.Font = CryptoMain.Eng_Comfortaa;
+                lblSessionID.Font = CryptoMain.Eng_Comfortaa;
+                lblDecryptedText.Font = CryptoMain.Eng_ComfortaaHighlight;
+                lblTextDecrypt.Font = CryptoMain.Eng_ComfortaaHighlight;
+                CopyPublicKey.Font = CryptoMain.Eng_Comfortaa;
+                CopyDecryptedText.Font = CryptoMain.Eng_Comfortaa;
+                DecryptButton.Font = CryptoMain.Eng_Comfortaa;
+                DecryptoResult.Font = CryptoMain.zhHans_waresu;
+                DecryptoText.Font = CryptoMain.zhHans_waresu;
+                SessionIDIncorrect.Font = CryptoMain.Eng_Comfortaa;
+            }
+
         }
 
         private void CopyPublicKey_Click(object sender, EventArgs e)
         {
-                Clipboard.SetData(DataFormats.Text, (Object)pubkey);
+            Clipboard.SetData(DataFormats.Text, (Object)pubkey);
         }
 
         private void DecryptButton_Click(object sender, EventArgs e)
@@ -68,7 +80,15 @@ namespace K2Lin_Crypto.Forms
             }
             catch (Exception error)
             {
-                MessageBox.Show("发现错误了！" + error + " 解密失败", "K2Lin Crypto (ﾟДﾟ*)ﾉ", MessageBoxButtons.OK);
+                string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
+                if (selLanguage.Contains("zh"))
+                {
+                    MessageBox.Show("发现错误了！" + error + " 解密失败", "K2Lin Crypto （；´д｀）ゞ", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    MessageBox.Show("Encountered an error！" + error + " Decryption failed", "K2Lin Crypto （；´д｀）ゞ", MessageBoxButtons.OK);
+                }
             }
         }
 

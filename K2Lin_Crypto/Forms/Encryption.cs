@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -17,16 +11,33 @@ namespace K2Lin_Crypto.Forms
         public Encryption()
         {
             InitializeComponent();
-            lblReciverPubKey.Font = CryptoMain.Eng_Comfortaa;
-            lblSessionID.Font = CryptoMain.Eng_Comfortaa;
-            EncryptSessionID.Font = CryptoMain.Eng_Comfortaa;
-            lblTextEncrypt.Font = CryptoMain.Eng_Comfortaa;
-            lblCiperText.Font = CryptoMain.Eng_Comfortaa;
-            ReceiverPublic.Font = CryptoMain.CN_waresu;
-            EncryptoText.Font = CryptoMain.CN_waresu;
-            EncryptButton.Font = CryptoMain.Eng_Comfortaa;
-            EncryptoResult.Font = CryptoMain.CN_waresu;
-            CopyEncryptedText.Font = CryptoMain.Eng_Comfortaa;
+            string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
+            if (selLanguage.Contains("zh"))
+            {
+                lblReciverPubKey.Font = CryptoMain.zhHans_waresu;
+                lblSessionID.Font = CryptoMain.zhHans_waresu;
+                EncryptSessionID.Font = CryptoMain.zhHans_waresu;
+                lblTextEncrypt.Font = CryptoMain.zhHans_waresu;
+                lblCiperText.Font = CryptoMain.zhHans_waresu;
+                ReceiverPublic.Font = CryptoMain.zhHans_waresu;
+                EncryptoText.Font = CryptoMain.zhHans_waresu;
+                EncryptButton.Font = CryptoMain.zhHans_waresu;
+                EncryptoResult.Font = CryptoMain.zhHans_waresu;
+                CopyEncryptedText.Font = CryptoMain.zhHans_waresu;
+            }
+            else
+            {
+                lblReciverPubKey.Font = CryptoMain.Eng_Comfortaa;
+                lblSessionID.Font = CryptoMain.Eng_Comfortaa;
+                EncryptSessionID.Font = CryptoMain.Eng_Comfortaa;
+                lblTextEncrypt.Font = CryptoMain.Eng_Comfortaa;
+                lblCiperText.Font = CryptoMain.Eng_Comfortaa;
+                ReceiverPublic.Font = CryptoMain.zhHans_waresu;
+                EncryptoText.Font = CryptoMain.zhHans_waresu;
+                EncryptButton.Font = CryptoMain.Eng_Comfortaa;
+                EncryptoResult.Font = CryptoMain.zhHans_waresu;
+                CopyEncryptedText.Font = CryptoMain.Eng_Comfortaa;
+            }
         }
 
         private void EncryptButton_Click(object sender, EventArgs e)
@@ -53,7 +64,15 @@ namespace K2Lin_Crypto.Forms
             }
             catch (Exception error)
             {
-                MessageBox.Show("发现错误了！" + error + " 加密失败", "K2Lin Crypto (ﾟДﾟ*)ﾉ", MessageBoxButtons.OK);
+                string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
+                if (selLanguage.Contains("zh"))
+                {
+                    MessageBox.Show("发现错误了！" + error + " 加密失败", "K2Lin Crypto （；´д｀）ゞ", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    MessageBox.Show("Encountered an error！" + error + " Encryption failed", "K2Lin Crypto （；´д｀）ゞ", MessageBoxButtons.OK);
+                }
             }
         }
 

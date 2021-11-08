@@ -47,8 +47,8 @@
             // 
             // Mainmenu
             // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tips);
             this.Controls.Add(this.Welcome);
             this.Name = "Mainmenu";
