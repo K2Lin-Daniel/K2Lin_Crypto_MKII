@@ -138,7 +138,7 @@
     <value>0, 577</value>
   </data>
   <data name="buttonAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 60</value>
+    <value>220, 60</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonAbout.TabIndex" type="System.Int32, mscorlib">
@@ -184,7 +184,7 @@
     <value>0, 290</value>
   </data>
   <data name="buttonKeypairs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 60</value>
+    <value>220, 60</value>
   </data>
   <data name="buttonKeypairs.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -229,7 +229,7 @@
     <value>0, 230</value>
   </data>
   <data name="buttonDcryption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 60</value>
+    <value>220, 60</value>
   </data>
   <data name="buttonDcryption.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -274,7 +274,7 @@
     <value>0, 170</value>
   </data>
   <data name="buttonEncryption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 60</value>
+    <value>220, 60</value>
   </data>
   <data name="buttonEncryption.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -319,7 +319,7 @@
     <value>0, 110</value>
   </data>
   <data name="buttonMainmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 60</value>
+    <value>220, 60</value>
   </data>
   <data name="buttonMainmenu.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -355,7 +355,7 @@
     <value>0, 0</value>
   </data>
   <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 110</value>
+    <value>220, 110</value>
   </data>
   <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -379,7 +379,7 @@
     <value>0, 0</value>
   </data>
   <data name="panelMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 637</value>
+    <value>220, 637</value>
   </data>
   <data name="panelMenu.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -403,7 +403,7 @@
     <value>NoControl</value>
   </data>
   <data name="minimizebtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>930, 12</value>
+    <value>860, 12</value>
   </data>
   <data name="minimizebtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -430,7 +430,7 @@
     <value>NoControl</value>
   </data>
   <data name="maximizebtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>968, 12</value>
+    <value>898, 12</value>
   </data>
   <data name="maximizebtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -457,7 +457,7 @@
     <value>NoControl</value>
   </data>
   <data name="closebtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1006, 12</value>
+    <value>936, 12</value>
   </data>
   <data name="closebtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -490,7 +490,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 36</value>
+    <value>457, 36</value>
   </data>
   <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 21</value>
@@ -517,10 +517,10 @@
     <value>Top</value>
   </data>
   <data name="panelTitleBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 0</value>
+    <value>220, 0</value>
   </data>
   <data name="panelTitleBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1050, 110</value>
+    <value>980, 110</value>
   </data>
   <data name="panelTitleBar.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -541,10 +541,10 @@
     <value>Fill</value>
   </data>
   <data name="panelDesktopPane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 110</value>
+    <value>220, 110</value>
   </data>
   <data name="panelDesktopPane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1050, 527</value>
+    <value>980, 527</value>
   </data>
   <data name="panelDesktopPane.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2348,9 +2348,6 @@
         AAAAAMABAADAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAgAAAAMAAAADAAAAA4AAAAPAAAADwAAAA
         +AAAAP/BAAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
