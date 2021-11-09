@@ -6,9 +6,18 @@
 
 The improved version of K2Lin Crypto has a nice UI. The same is the implementation of RSA encryption on C#.
 
-#Features
-The main function is to realize RSA asymmetric encryption, which allows you to transmit confidential data in an insecure transmission environment.
+# Features
+
+**RSA asymmetric encryption**
+
+Main function of this program ♪(´▽｀)
+
+which allows you to transmit confidential data in an insecure transmission environment.
+
 **Multi-language support**
+
 (currently supports Chinese and English) o(*￣▽￣*)ブ
+
 **Save and import key pairs.**
+
 allowing you to keep a static key pair. Until you need it.(optional two-step verification encryption for selection.)
