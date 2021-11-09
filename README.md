@@ -14,6 +14,8 @@ Main function of this program ♪(´▽｀)
 
 which allows you to transmit confidential data in an insecure transmission environment.
 
+Want to know how it works? [Wikipedia](https://simple.wikipedia.org/wiki/RSA_algorithm)
+
 **Multi-language support**
 
 (currently supports Chinese and English) o(*￣▽￣*)ブ
