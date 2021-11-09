@@ -21,3 +21,8 @@ which allows you to transmit confidential data in an insecure transmission envir
 **Save and import key pairs.**
 
 allowing you to keep a static key pair. Until you need it.(optional two-step verification encryption for selection.)
+
+**Modern user interface**
+
+Compared with the MKI version of this program, this version adds a modern and beautiful plain UI.
+(If you want to add some colors you like, just create a branch!)ヾ(•ω•`)o
