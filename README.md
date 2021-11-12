@@ -8,7 +8,7 @@ The improved version of K2Lin Crypto has a nice UI. The same is the implementati
 
 # Features!
 
-**RSA asymmetric encryption**
+**RSA asymmetric encryption - with OAEP padding**
 
 Main function of this program ♪(´▽｀)
 
