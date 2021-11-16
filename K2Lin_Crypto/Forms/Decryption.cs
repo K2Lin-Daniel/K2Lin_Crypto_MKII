@@ -75,7 +75,7 @@ namespace K2Lin_Crypto.Forms
                 RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
                 rsa.FromXmlString(Privkey);
                 byte[] Encryptedtext = Convert.FromBase64String(DecryptText);
-                byte[] decryptedtext = rsa.Decrypt(Encryptedtext, false);
+                byte[] decryptedtext = rsa.Decrypt(Encryptedtext, true);
                 DecryptoResult.Text = Encoding.UTF8.GetString(decryptedtext);
             }
             catch (Exception error)

@@ -51,7 +51,7 @@ namespace K2Lin_Crypto.Forms
                 string ReceiverPubkey = PublicKeyXML.SelectSingleNode(pubkeypath).InnerText;
                 rsa.FromXmlString(ReceiverPubkey);
                 byte[] data = Encoding.UTF8.GetBytes(EncryptoText.Text);
-                byte[] encryptedtext = rsa.Encrypt(data, false);
+                byte[] encryptedtext = rsa.Encrypt(data, true);
                 XmlDocument EncryptXML = new XmlDocument();
                 EncryptXML.LoadXml("<K2LinCrypto></K2LinCrypto>");
                 XmlElement Text = EncryptXML.CreateElement("EncryptedText");

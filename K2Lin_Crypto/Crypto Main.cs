@@ -204,7 +204,7 @@ namespace K2Lin_Crypto
             }
         }
         private void OpenChildForm(Form childForm, object btnSender)
-        {
+        {   
             if (activeForm != null)
                 activeForm.Close();
             ActivateButton(btnSender);

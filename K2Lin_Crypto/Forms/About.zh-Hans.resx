@@ -121,9 +121,9 @@
     <value>关于</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
-    <value>K2Lin 的 Github</value>
+    <value>K2Lin's Github</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>K2Lin Cryptography MKII v1.0.2.1</value>
+    <value>K2Lin Cryptography MKII V3.0 Preview</value>
   </data>
 </root>

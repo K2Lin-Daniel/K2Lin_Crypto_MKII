@@ -151,7 +151,7 @@
     <value>Left, Right</value>
   </data>
   <data name="ReceiverPublic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 98</value>
+    <value>152, 96</value>
   </data>
   <data name="ReceiverPublic.Size" type="System.Drawing.Size, System.Drawing">
     <value>635, 21</value>
@@ -217,7 +217,7 @@
     <value>146, 122</value>
   </data>
   <data name="lblSessionID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 33</value>
+    <value>123, 33</value>
   </data>
   <data name="lblSessionID.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -241,7 +241,7 @@
     <value>Right</value>
   </data>
   <data name="EncryptSessionID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>637, 169</value>
+    <value>638, 123</value>
   </data>
   <data name="EncryptSessionID.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 21</value>

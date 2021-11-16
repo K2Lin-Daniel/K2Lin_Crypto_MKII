@@ -39,7 +39,7 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.label1.ForeColor = System.Drawing.Color.Pink;
             this.label1.Name = "label1";
             // 
             // pictureBox1
