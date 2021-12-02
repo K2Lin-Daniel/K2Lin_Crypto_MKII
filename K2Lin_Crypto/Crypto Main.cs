@@ -244,6 +244,11 @@ namespace K2Lin_Crypto
             OpenChildForm(new Forms.About(), sender);
         }
 
+        private void AESEncrypt_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.AESEncrypt(), sender);
+        }
+
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)

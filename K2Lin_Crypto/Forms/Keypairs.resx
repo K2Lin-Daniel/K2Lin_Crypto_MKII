@@ -133,7 +133,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblPubKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 76</value>
+    <value>150, 50</value>
   </data>
   <data name="lblPubKey.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 18</value>
@@ -154,7 +154,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblPubKey.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="lblPrivKey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -169,7 +169,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblPrivKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 134</value>
+    <value>146, 134</value>
   </data>
   <data name="lblPrivKey.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 18</value>
@@ -190,16 +190,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblPrivKey.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="pubkey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
   <data name="pubkey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 110</value>
+    <value>149, 110</value>
   </data>
   <data name="pubkey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>770, 21</value>
+    <value>639, 21</value>
   </data>
   <data name="pubkey.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -214,16 +214,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pubkey.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="privkey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
   <data name="privkey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 175</value>
+    <value>149, 175</value>
   </data>
   <data name="privkey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>770, 21</value>
+    <value>639, 21</value>
   </data>
   <data name="privkey.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -238,7 +238,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;privkey.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="Sel2048.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -271,7 +271,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Sel2048.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="Sel4096.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -304,7 +304,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Sel4096.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="Sel8192.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Sel8192.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="lblSelectLength.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -352,7 +352,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblSelectLength.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 202</value>
+    <value>21, 200</value>
   </data>
   <data name="lblSelectLength.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 18</value>
@@ -373,7 +373,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSelectLength.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="generate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -403,7 +403,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;generate.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="SessionID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -430,10 +430,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SessionID.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="lblSessionID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
+    <value>Right</value>
   </data>
   <data name="lblSessionID.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -445,7 +445,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblSessionID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 46</value>
+    <value>407, 50</value>
   </data>
   <data name="lblSessionID.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 18</value>
@@ -466,7 +466,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSessionID.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <metadata name="SaveXML.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -514,7 +514,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblKeyFile.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lblEncryptNote.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -556,61 +556,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblEncryptNote.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Export.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="Export.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Export.Location" type="System.Drawing.Point, System.Drawing">
-    <value>724, 299</value>
-  </data>
-  <data name="Export.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="Export.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;Export.Name" xml:space="preserve">
-    <value>Export</value>
-  </data>
-  <data name="&gt;&gt;Export.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Export.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Export.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Import.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="Import.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Import.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 299</value>
-  </data>
-  <data name="Import.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="Import.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;Import.Name" xml:space="preserve">
-    <value>Import</value>
-  </data>
-  <data name="&gt;&gt;Import.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Import.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Import.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="lblTFA.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -621,11 +567,14 @@
   <data name="lblTFA.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comfortaa, 16pt</value>
   </data>
+  <data name="lblTFA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lblTFA.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 369</value>
   </data>
   <data name="lblTFA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 35</value>
+    <value>388, 35</value>
   </data>
   <data name="lblTFA.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -643,7 +592,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTFA.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="TFAPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -676,7 +625,88 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TFAPassword.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 62</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 128</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="Export.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Export.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Export.Location" type="System.Drawing.Point, System.Drawing">
+    <value>724, 299</value>
+  </data>
+  <data name="Export.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="Export.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;Export.Name" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="&gt;&gt;Export.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Export.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Export.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Import.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Import.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Import.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 299</value>
+  </data>
+  <data name="Import.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="Import.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;Import.Name" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="&gt;&gt;Import.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Import.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Import.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -686,9 +716,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Keypairs</value>

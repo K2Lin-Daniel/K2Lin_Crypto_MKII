@@ -55,7 +55,7 @@ namespace K2Lin_Crypto.Forms
             {
                 XmlDocument DecryptXML = new XmlDocument();
                 DecryptXML.LoadXml(DecryptoText.Text);
-                string textpath = "K2LinCrypto/EncryptedText";
+                string textpath = "K2LinCrypto/RSA-EncryptedText";
                 string DecryptText = DecryptXML.SelectSingleNode(textpath).InnerText;
                 string hashpath = "K2LinCrypto/HashID";
                 string HashID = DecryptXML.SelectSingleNode(hashpath).InnerText;

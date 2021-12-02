@@ -93,6 +93,12 @@
     <Compile Include="Forms\Encryption.Designer.cs">
       <DependentUpon>Encryption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AESEncrypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AESEncrypt.Designer.cs">
+      <DependentUpon>AESEncrypt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Keypairs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,12 @@
     <EmbeddedResource Include="Forms\About.zh-Hans.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AESEncrypt.en.resx">
+      <DependentUpon>AESEncrypt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AESEncrypt.zh-Hans.resx">
+      <DependentUpon>AESEncrypt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Decryption.en.resx">
       <DependentUpon>Decryption.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Encryption.zh-Hans.resx">
       <DependentUpon>Encryption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AESEncrypt.resx">
+      <DependentUpon>AESEncrypt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Keypairs.en.resx">
       <DependentUpon>Keypairs.cs</DependentUpon>
@@ -235,6 +250,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data-encryption.ico" />
+    <None Include="Resources\encryptedFile.png" />
+    <None Include="Resources\Security Aes.png" />
     <None Include="Resources\DD icon 32.png" />
   </ItemGroup>
   <ItemGroup>

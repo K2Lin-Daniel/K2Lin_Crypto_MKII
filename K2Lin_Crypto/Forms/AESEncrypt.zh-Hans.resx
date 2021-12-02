@@ -118,12 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="$this.Text" xml:space="preserve">
-    <value>关于</value>
+    <value>AES加密</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>K2Lin's Github</value>
+  <data name="CopyDecryptedText.Text" xml:space="preserve">
+    <value>复制输出文本</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>K2Lin Cryptography MKII V3</value>
+  <data name="CryptButton.Text" xml:space="preserve">
+    <value>执行！</value>
+  </data>
+  <data name="lblOriginText.Text" xml:space="preserve">
+    <value>执行文本</value>
+  </data>
+  <data name="lblPassKey.Text" xml:space="preserve">
+    <value>密钥</value>
+  </data>
+  <data name="lblSessionID.Text" xml:space="preserve">
+    <value>密钥 ID</value>
+  </data>
+  <data name="GenerateKey.Text" xml:space="preserve">
+    <value>生成强密钥</value>
   </data>
 </root>

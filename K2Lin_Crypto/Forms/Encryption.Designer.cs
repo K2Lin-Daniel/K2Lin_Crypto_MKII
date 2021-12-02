@@ -92,7 +92,6 @@
             resources.ApplyResources(this.EncryptoResult, "EncryptoResult");
             this.EncryptoResult.Name = "EncryptoResult";
             this.EncryptoResult.ReadOnly = true;
-            this.EncryptoResult.TextChanged += new System.EventHandler(this.EncryptoResult_TextChanged);
             // 
             // EncryptButton
             // 

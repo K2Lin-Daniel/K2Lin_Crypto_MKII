@@ -124,18 +124,21 @@
     <value>关于</value>
   </data>
   <data name="buttonDcryption.Text" xml:space="preserve">
-    <value>解密</value>
+    <value>RSA 解密</value>
   </data>
   <data name="buttonEncryption.Text" xml:space="preserve">
-    <value>加密</value>
+    <value>RSA 加密</value>
   </data>
   <data name="buttonKeypairs.Text" xml:space="preserve">
-    <value>密钥对</value>
+    <value>RSA 密钥对</value>
   </data>
   <data name="buttonMainmenu.Text" xml:space="preserve">
     <value>主选单</value>
   </data>
   <data name="lblTitle.Text" xml:space="preserve">
     <value>首页</value>
+  </data>
+  <data name="AESEncrypt.Text" xml:space="preserve">
+    <value>AES 加密</value>
   </data>
 </root>

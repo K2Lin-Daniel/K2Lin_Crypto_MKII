@@ -54,7 +54,7 @@ namespace K2Lin_Crypto.Forms
                 byte[] encryptedtext = rsa.Encrypt(data, true);
                 XmlDocument EncryptXML = new XmlDocument();
                 EncryptXML.LoadXml("<K2LinCrypto></K2LinCrypto>");
-                XmlElement Text = EncryptXML.CreateElement("EncryptedText");
+                XmlElement Text = EncryptXML.CreateElement("RSA-EncryptedText");
                 Text.InnerText = Convert.ToBase64String(encryptedtext);
                 EncryptXML.DocumentElement.AppendChild(Text);
                 XmlElement HashID = EncryptXML.CreateElement("HashID");
@@ -94,11 +94,6 @@ namespace K2Lin_Crypto.Forms
         private void CopyEncryptedText_Click(object sender, EventArgs e)
         {
             Clipboard.SetData(DataFormats.Text, (Object)EncryptoResult.Text);
-        }
-
-        private void EncryptoResult_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

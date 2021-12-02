@@ -123,6 +123,16 @@ namespace K2Lin_Crypto.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap encryptedFile {
+            get {
+                object obj = ResourceManager.GetObject("encryptedFile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);
@@ -186,6 +196,16 @@ namespace K2Lin_Crypto.Properties {
         internal static System.Drawing.Bitmap padlock {
             get {
                 object obj = ResourceManager.GetObject("padlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Security_Aes {
+            get {
+                object obj = ResourceManager.GetObject("Security Aes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

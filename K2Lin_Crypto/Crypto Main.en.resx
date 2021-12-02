@@ -121,7 +121,7 @@
     <value>Mainmenu</value>
   </data>
   <data name="buttonKeypairs.Text" xml:space="preserve">
-    <value>Keypairs</value>
+    <value>RSA Keypairs</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>K2Lin Crypto MKII</value>
@@ -130,12 +130,15 @@
     <value>HOME</value>
   </data>
   <data name="buttonEncryption.Text" xml:space="preserve">
-    <value>Encryption</value>
+    <value>RSA Encrypt</value>
   </data>
   <data name="buttonDcryption.Text" xml:space="preserve">
-    <value>Decryption</value>
+    <value>RSA Decrypt</value>
   </data>
   <data name="buttonAbout.Text" xml:space="preserve">
     <value>About</value>
+  </data>
+  <data name="AESEncrypt.Text" xml:space="preserve">
+    <value>AES Encrypt</value>
   </data>
 </root>
