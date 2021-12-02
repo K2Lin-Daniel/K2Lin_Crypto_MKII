@@ -20,7 +20,7 @@ Want to know how it works? [Wikipedia](https://simple.wikipedia.org/wiki/RSA_alg
 
 Perfect for chatting with friends! (｡･∀･)ﾉﾞ
 
-Want to know how it works? [Wikipedia](https://simple.wikipedia.org/wiki/RSA_algorithm)
+Want to know how it works? [Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 
 **Multi-language support**
 
