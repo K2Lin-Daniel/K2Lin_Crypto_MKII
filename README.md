@@ -12,7 +12,13 @@ The improved version of K2Lin Crypto has a nice UI. The same is the implementati
 
 Main function of this program ♪(´▽｀)
 
-which allows you to transmit confidential data in an insecure transmission environment.
+Which allows you to transmit confidential data in an insecure transmission environment.
+
+Want to know how it works? [Wikipedia](https://simple.wikipedia.org/wiki/RSA_algorithm)
+
+**AES symmetric encryption - with 256-bit encryption**
+
+Perfect for chatting with friends! (｡･∀･)ﾉﾞ
 
 Want to know how it works? [Wikipedia](https://simple.wikipedia.org/wiki/RSA_algorithm)
 
@@ -22,7 +28,7 @@ Want to know how it works? [Wikipedia](https://simple.wikipedia.org/wiki/RSA_alg
 
 **Save and import key pairs.**
 
-allowing you to keep a static key pair. Until you need it.(optional two-step verification encryption for selection.)
+Allowing you to keep a static key pair. Until you need it.(optional two-step verification encryption for selection.)
 
 **Modern user interface**
 
