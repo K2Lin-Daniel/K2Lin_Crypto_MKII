@@ -132,13 +132,16 @@
   <data name="buttonEncryption.Text" xml:space="preserve">
     <value>RSA Encrypt</value>
   </data>
-  <data name="buttonDcryption.Text" xml:space="preserve">
-    <value>RSA Decrypt</value>
-  </data>
   <data name="buttonAbout.Text" xml:space="preserve">
     <value>About</value>
   </data>
-  <data name="AESEncrypt.Text" xml:space="preserve">
+  <data name="buttonAESEncrypt.Text" xml:space="preserve">
     <value>AES Encrypt</value>
+  </data>
+  <data name="buttonDecryption.Text" xml:space="preserve">
+    <value>RSA Decrypt</value>
+  </data>
+  <data name="buttonPNGStegano.Text" xml:space="preserve">
+    <value>PNG Encrypt</value>
   </data>
 </root>

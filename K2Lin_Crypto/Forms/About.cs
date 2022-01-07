@@ -24,5 +24,10 @@ namespace K2Lin_Crypto.Forms
         {
             System.Diagnostics.Process.Start("https://github.com/K2Lin-Daniel");
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

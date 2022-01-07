@@ -81,29 +81,35 @@
     <Compile Include="Forms\About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Decryption.cs">
+    <Compile Include="Forms\PNG-Steganography.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Decryption.Designer.cs">
-      <DependentUpon>Decryption.cs</DependentUpon>
+    <Compile Include="Forms\PNG-Steganography.Designer.cs">
+      <DependentUpon>PNG-Steganography.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Encryption.cs">
+    <Compile Include="Forms\RSA-Decryption.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Encryption.Designer.cs">
-      <DependentUpon>Encryption.cs</DependentUpon>
+    <Compile Include="Forms\RSA-Decryption.Designer.cs">
+      <DependentUpon>RSA-Decryption.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AESEncrypt.cs">
+    <Compile Include="Forms\RSA-Encryption.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AESEncrypt.Designer.cs">
-      <DependentUpon>AESEncrypt.cs</DependentUpon>
+    <Compile Include="Forms\RSA-Encryption.Designer.cs">
+      <DependentUpon>RSA-Encryption.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Keypairs.cs">
+    <Compile Include="Forms\AES-Cryption.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Keypairs.Designer.cs">
-      <DependentUpon>Keypairs.cs</DependentUpon>
+    <Compile Include="Forms\AES-Cryption.Designer.cs">
+      <DependentUpon>AES-Cryption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RSA-Keypairs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RSA-Keypairs.Designer.cs">
+      <DependentUpon>RSA-Keypairs.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Mainmenu.cs">
       <SubType>Form</SubType>
@@ -112,6 +118,7 @@
       <DependentUpon>Mainmenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\AES-PBKDF2 Encrypt.cs" />
+    <Compile Include="Modules\SteganographyModule.cs" />
     <Compile Include="Modules\ThemeColor.cs" />
     <Compile Include="Crypto Main.cs">
       <SubType>Form</SubType>
@@ -139,41 +146,50 @@
     <EmbeddedResource Include="Forms\About.zh-Hans.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AESEncrypt.en.resx">
-      <DependentUpon>AESEncrypt.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AES-Cryption.en.resx">
+      <DependentUpon>AES-Cryption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AESEncrypt.zh-Hans.resx">
-      <DependentUpon>AESEncrypt.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AES-Cryption.zh-Hans.resx">
+      <DependentUpon>AES-Cryption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Decryption.en.resx">
-      <DependentUpon>Decryption.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\PNG-Steganography.en.resx">
+      <DependentUpon>PNG-Steganography.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Decryption.resx">
-      <DependentUpon>Decryption.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\PNG-Steganography.resx">
+      <DependentUpon>PNG-Steganography.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Decryption.zh-Hans.resx">
-      <DependentUpon>Decryption.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\PNG-Steganography.zh-Hans.resx">
+      <DependentUpon>PNG-Steganography.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Encryption.en.resx">
-      <DependentUpon>Encryption.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RSA-Decryption.en.resx">
+      <DependentUpon>RSA-Decryption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Encryption.resx">
-      <DependentUpon>Encryption.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RSA-Decryption.resx">
+      <DependentUpon>RSA-Decryption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Encryption.zh-Hans.resx">
-      <DependentUpon>Encryption.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RSA-Decryption.zh-Hans.resx">
+      <DependentUpon>RSA-Decryption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AESEncrypt.resx">
-      <DependentUpon>AESEncrypt.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RSA-Encryption.en.resx">
+      <DependentUpon>RSA-Encryption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Keypairs.en.resx">
-      <DependentUpon>Keypairs.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RSA-Encryption.resx">
+      <DependentUpon>RSA-Encryption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Keypairs.resx">
-      <DependentUpon>Keypairs.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RSA-Encryption.zh-Hans.resx">
+      <DependentUpon>RSA-Encryption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Keypairs.zh-Hans.resx">
-      <DependentUpon>Keypairs.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AES-Cryption.resx">
+      <DependentUpon>AES-Cryption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RSA-Keypairs.en.resx">
+      <DependentUpon>RSA-Keypairs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RSA-Keypairs.resx">
+      <DependentUpon>RSA-Keypairs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RSA-Keypairs.zh-Hans.resx">
+      <DependentUpon>RSA-Keypairs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mainmenu.en.resx">
       <DependentUpon>Mainmenu.cs</DependentUpon>
@@ -250,6 +266,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data-encryption.ico" />
+    <None Include="Resources\Crypto Logo_Small_Ver3.png" />
     <None Include="Resources\encryptedFile.png" />
     <None Include="Resources\Security Aes.png" />
     <None Include="Resources\DD icon 32.png" />

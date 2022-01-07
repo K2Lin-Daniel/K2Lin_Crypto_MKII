@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AESEncrypt.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="buttonPNGStegano.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="AESEncrypt.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="buttonPNGStegano.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AESEncrypt.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="buttonPNGStegano.Font" type="System.Drawing.Font, System.Drawing">
     <value>等线, 12.25pt</value>
   </data>
-  <data name="AESEncrypt.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonPNGStegano.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAAA4FJREFUWEfF11uoVUUYwHGJSEHzgqKmiUlmFt4y0hcJE/FBIVAQ8kG8PYQQXsAb
@@ -149,42 +149,108 @@
         v3o1rRh8eFo63QNxDqtWsth/BAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="AESEncrypt.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="buttonPNGStegano.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="AESEncrypt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="buttonPNGStegano.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="AESEncrypt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 350</value>
+  <data name="buttonPNGStegano.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 384</value>
   </data>
-  <data name="AESEncrypt.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonPNGStegano.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 60</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AESEncrypt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="buttonPNGStegano.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="AESEncrypt.Text" xml:space="preserve">
-    <value>AES Encrypt</value>
+  <data name="buttonPNGStegano.Text" xml:space="preserve">
+    <value>PNG Encrypt</value>
   </data>
-  <data name="AESEncrypt.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="buttonPNGStegano.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="AESEncrypt.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="buttonPNGStegano.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;AESEncrypt.Name" xml:space="preserve">
-    <value>AESEncrypt</value>
+  <data name="&gt;&gt;buttonPNGStegano.Name" xml:space="preserve">
+    <value>buttonPNGStegano</value>
   </data>
-  <data name="&gt;&gt;AESEncrypt.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonPNGStegano.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;AESEncrypt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonPNGStegano.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;AESEncrypt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonPNGStegano.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="buttonAESEncrypt.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="buttonAESEncrypt.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonAESEncrypt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>等线, 12.25pt</value>
+  </data>
+  <data name="buttonAESEncrypt.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAA4FJREFUWEfF11uoVUUYwHGJSEHzgqKmiUlmFt4y0hcJE/FBIVAQ8kG8PYQQXsAb
+        SNfHehFNEiyKIEzTB/GGIN6iCC8QZiKmVgiVlGaikng5/v+HmcWcWbPP2ZjYwI81881as/ZeM/PttTu1
+        tLT8r4rBJk3Hn4H10jkdKgY78Ci24DbG4AXcwWbYV7qmoWKwgR5YhV+xB4OwKLC+F/atRHeUxqgpBtEH
+        T2IcVmA3zuMgJuLZUD8dHMBQvIJD8FyvWQ7HcCzHrN0rD8zCKZzDTziO7XgbIzEMG3AzHON1H+MW1mAI
+        nsdH+BqO4ViO+SNeQ3XPqhJcxVsYgefgTZ3nediK37Efznt+7Uvwhn/BDx2nYRQcyzH9It6juq6qBD+j
+        f6i7qM7iJHzcH+Bp5NfkvNlG+OinwOn4AvY9Ae9RnV9Vgh8wNdTHwkf+eGjfD68djvjEpuFEqLeqKsEx
+        zMliD9JcHE1jaae+weIs1khnDIRb0Ecb4wNCLD03WgLvUcXSTrmdXCh53AFdzXHgLjgDF+VvcGEad9td
+        CrFf4MJMx3HseG6rtFMmk3VZTAtg8Wj7KfwLt5sJqi/85nfh2nHu3TVuy3ScD+E9qljaqS/xVRaTqfda
+        ONruB7+9C8ynYcwPYPFbN1q427ApjaWdeg9uuTQ2GCaQ8eHYE8b/wUUcDm0tg3nAKfgO+VowS76TxtJO
+        TYL79JEk9ia8cVeYJd+A8T+QPoF4jW2fwBHsCLHY79im8hirfQBXtgNPCG0vcvHdwIVw3Idu8AnENeCU
+        9IZJazRKH+BlOG2PJbHaB5BT8Gmo98K3MKv5OJ1ffwndfuaMdBf4Yd/HlRD7Hs8gjvsZ3GWx3apNI/AH
+        yXm07qDx0Uax7Tcp5QHr+dzLMdv8EKlNI3EZr2ex/2Ih/s5irWqBYCmc71Lf/XCsYoatBRJuMROHLxO2
+        TT6y7kJrJuZUrIdrwnZNMRj4O24xAdnehbiqLR53ohTzXOtea/G9wnZNMZgwd1tccK9iPoyvDUfbpZjn
+        eo3FFxzjRcVgxtTsoiz1tccfpZi6GyoGC0xGJigTUKk/Zcb0XPNEqb+NYrABk811+MpV6peJx3k355f6
+        a4rBdnwCy2Tkfb6SWz5H3tdQMdgBXzosvinH2GwDlNVIz+1QMdiEGbC8i7hTZqJ0bruKwSa9CF/L/NOR
+        v3o1rRh8eFo63QNxDqtWsth/BAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonAESEncrypt.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonAESEncrypt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonAESEncrypt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 324</value>
+  </data>
+  <data name="buttonAESEncrypt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="buttonAESEncrypt.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="buttonAESEncrypt.Text" xml:space="preserve">
+    <value>AES Encrypt</value>
+  </data>
+  <data name="buttonAESEncrypt.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonAESEncrypt.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;buttonAESEncrypt.Name" xml:space="preserve">
+    <value>buttonAESEncrypt</value>
+  </data>
+  <data name="&gt;&gt;buttonAESEncrypt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAESEncrypt.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="&gt;&gt;buttonAESEncrypt.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="buttonAbout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -229,7 +295,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;buttonAbout.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="buttonKeypairs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -247,7 +313,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonKeypairs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 290</value>
+    <value>0, 264</value>
   </data>
   <data name="buttonKeypairs.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 60</value>
@@ -274,52 +340,52 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;buttonKeypairs.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
-  <data name="buttonDcryption.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="buttonDecryption.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="buttonDcryption.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="buttonDecryption.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="buttonDcryption.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="buttonDecryption.Font" type="System.Drawing.Font, System.Drawing">
     <value>等线, 12.25pt</value>
   </data>
-  <data name="buttonDcryption.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="buttonDecryption.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="buttonDcryption.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="buttonDecryption.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="buttonDcryption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 230</value>
+  <data name="buttonDecryption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 204</value>
   </data>
-  <data name="buttonDcryption.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonDecryption.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 60</value>
   </data>
-  <data name="buttonDcryption.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonDecryption.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="buttonDcryption.Text" xml:space="preserve">
+  <data name="buttonDecryption.Text" xml:space="preserve">
     <value>RSA Decrypt</value>
   </data>
-  <data name="buttonDcryption.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="buttonDecryption.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="buttonDcryption.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="buttonDecryption.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;buttonDcryption.Name" xml:space="preserve">
-    <value>buttonDcryption</value>
+  <data name="&gt;&gt;buttonDecryption.Name" xml:space="preserve">
+    <value>buttonDecryption</value>
   </data>
-  <data name="&gt;&gt;buttonDcryption.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonDecryption.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonDcryption.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonDecryption.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;buttonDcryption.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;buttonDecryption.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="buttonEncryption.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -337,7 +403,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonEncryption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 170</value>
+    <value>0, 144</value>
   </data>
   <data name="buttonEncryption.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 60</value>
@@ -364,7 +430,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;buttonEncryption.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="buttonMainmenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -382,7 +448,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonMainmenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 110</value>
+    <value>0, 84</value>
   </data>
   <data name="buttonMainmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 60</value>
@@ -409,7 +475,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;buttonMainmenu.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="panelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -421,7 +487,7 @@
     <value>0, 0</value>
   </data>
   <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 110</value>
+    <value>220, 84</value>
   </data>
   <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -436,7 +502,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;panelLogo.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="panelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -469,7 +535,7 @@
     <value>NoControl</value>
   </data>
   <data name="minimizebtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>860, 12</value>
+    <value>839, 17</value>
   </data>
   <data name="minimizebtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -496,7 +562,7 @@
     <value>NoControl</value>
   </data>
   <data name="maximizebtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>898, 12</value>
+    <value>877, 17</value>
   </data>
   <data name="maximizebtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -523,7 +589,7 @@
     <value>NoControl</value>
   </data>
   <data name="closebtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>936, 12</value>
+    <value>915, 17</value>
   </data>
   <data name="closebtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -556,7 +622,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 36</value>
+    <value>462, 28</value>
   </data>
   <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 21</value>
@@ -586,7 +652,7 @@
     <value>220, 0</value>
   </data>
   <data name="panelTitleBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 110</value>
+    <value>980, 84</value>
   </data>
   <data name="panelTitleBar.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -607,10 +673,10 @@
     <value>Fill</value>
   </data>
   <data name="panelDesktopPane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 110</value>
+    <value>220, 84</value>
   </data>
   <data name="panelDesktopPane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 527</value>
+    <value>980, 553</value>
   </data>
   <data name="panelDesktopPane.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -627,9 +693,9 @@
   <data name="&gt;&gt;panelDesktopPane.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>9, 17</value>
   </data>
@@ -2414,9 +2480,6 @@
         AAAAAMABAADAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAgAAAAMAAAADAAAAA4AAAAPAAAADwAAAA
         +AAAAP/BAAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>

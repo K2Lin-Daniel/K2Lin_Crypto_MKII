@@ -51,21 +51,25 @@ namespace K2Lin_Crypto
             if (selLanguage.Contains("zh"))
             {
                 buttonMainmenu.Font = zhHans_waresu;
-                buttonDcryption.Font = zhHans_waresu;
+                buttonDecryption.Font = zhHans_waresu;
                 buttonEncryption.Font = zhHans_waresu;
                 buttonKeypairs.Font = zhHans_waresu;
                 buttonKeypairs.Font = zhHans_waresu;
                 buttonAbout.Font = zhHans_waresu;
+                buttonAESEncrypt.Font = zhHans_waresu;
+                buttonPNGStegano.Font = zhHans_waresu;
                 lblTitle.Font = zhHans_waresu;
             }
             else
             {
                 buttonMainmenu.Font = Eng_Comfortaa;
-                buttonDcryption.Font = Eng_Comfortaa;
+                buttonDecryption.Font = Eng_Comfortaa;
                 buttonEncryption.Font = Eng_Comfortaa;
                 buttonKeypairs.Font = Eng_Comfortaa;
                 buttonKeypairs.Font = Eng_Comfortaa;
                 buttonAbout.Font = Eng_Comfortaa;
+                buttonAESEncrypt.Font = Eng_Comfortaa;
+                buttonPNGStegano.Font = Eng_Comfortaa;
                 lblTitle.Font = Eng_Comfortaa;
             }
             OpenChildForm(new Forms.Mainmenu(), buttonMainmenu);
@@ -216,7 +220,7 @@ namespace K2Lin_Crypto
             this.panelDesktopPane.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            lblTitle.Text = childForm.Text;
+            lblTitle.Text = currentButton.Text;
         }
 
         private void buttonMainmenu_Click(object sender, EventArgs e)
@@ -224,7 +228,7 @@ namespace K2Lin_Crypto
             OpenChildForm(new Forms.Mainmenu(), sender);
         }
 
-        private void buttonDcryption_Click(object sender, EventArgs e)
+        private void buttonDecryption_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.Decryption(), sender);
         }
@@ -247,6 +251,11 @@ namespace K2Lin_Crypto
         private void AESEncrypt_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.AESEncrypt(), sender);
+        }
+
+        private void buttonPNGStegano_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.PNGSteganography(), sender);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

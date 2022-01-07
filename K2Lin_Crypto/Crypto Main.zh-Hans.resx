@@ -123,9 +123,6 @@
   <data name="buttonAbout.Text" xml:space="preserve">
     <value>关于</value>
   </data>
-  <data name="buttonDcryption.Text" xml:space="preserve">
-    <value>RSA 解密</value>
-  </data>
   <data name="buttonEncryption.Text" xml:space="preserve">
     <value>RSA 加密</value>
   </data>
@@ -138,7 +135,13 @@
   <data name="lblTitle.Text" xml:space="preserve">
     <value>首页</value>
   </data>
-  <data name="AESEncrypt.Text" xml:space="preserve">
+  <data name="buttonAESEncrypt.Text" xml:space="preserve">
     <value>AES 加密</value>
+  </data>
+  <data name="buttonDecryption.Text" xml:space="preserve">
+    <value>RSA 解密</value>
+  </data>
+  <data name="buttonPNGStegano.Text" xml:space="preserve">
+    <value>PNG 隐写术</value>
   </data>
 </root>
