@@ -22,6 +22,12 @@ Perfect for chatting with friends! (｡･∀･)ﾉﾞ
 
 Want to know how it works? [Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 
+**Image Steganography Tech - with Least Significant Bit**
+
+Very stealthy, keep it cool!☆⌒(*＾-゜)v THX!!
+
+Want to know how it works? [Wikipedia](https://en.wikipedia.org/wiki/Steganography)
+
 **Multi-language support**
 
 (currently supports Chinese and English) o(*￣▽￣*)ブ
