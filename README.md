@@ -24,6 +24,8 @@ Want to know how it works? [Wikipedia](https://en.wikipedia.org/wiki/Advanced_En
 
 **Image Steganography Tech - with Least Significant Bit**
 
+Hide your messages in a image!
+
 Very stealthy, keep it cool!☆⌒(*＾-゜)v THX!!
 
 Want to know how it works? [Wikipedia](https://en.wikipedia.org/wiki/Steganography)
