@@ -167,9 +167,6 @@
     <EmbeddedResource Include="Forms\RSA-Encryption.zh-Hans.resx">
       <DependentUpon>RSA-Encryption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AES-Cryption.resx">
-      <DependentUpon>AES-Cryption.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RSA-Keypairs.en.resx">
       <DependentUpon>RSA-Keypairs.cs</DependentUpon>
     </EmbeddedResource>
