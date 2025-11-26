@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Management;
 using System.Security.Cryptography;
@@ -17,33 +17,16 @@ namespace K2Lin_Crypto.Forms
             pubkey.Text = CryptoMain.PubKey;
             privkey.Text = CryptoMain.PrivKey;
             SessionID.Text = CryptoMain.SessionID;
-            string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
-            if (selLanguage.Contains("zh"))
-            {
-                lblPrivKey.Font = CryptoMain.zhHans_waresu;
-                lblPubKey.Font = CryptoMain.zhHans_waresu;
-                lblSessionID.Font = CryptoMain.zhHans_waresu;
-                lblSelectLength.Font = CryptoMain.zhHans_waresu;
-                lblEncryptNote.Font = CryptoMain.zhHans_waresu;
-                lblKeyFile.Font = CryptoMain.zhHans_waresuHighlight;
-                lblTFA.Font = CryptoMain.zhHans_waresu;
-                TFAPassword.Font = CryptoMain.Eng_Comfortaa;
-                SessionID.Font = CryptoMain.zhHans_waresu;
-                generate.Font = CryptoMain.zhHans_waresu;
-            }
-            else
-            {
-                lblPrivKey.Font = CryptoMain.Eng_Comfortaa;
-                lblPubKey.Font = CryptoMain.Eng_Comfortaa;
-                lblSessionID.Font = CryptoMain.Eng_Comfortaa;
-                lblSelectLength.Font = CryptoMain.Eng_Comfortaa;
-                lblEncryptNote.Font = CryptoMain.Eng_Comfortaa;
-                lblKeyFile.Font = CryptoMain.Eng_ComfortaaHighlight;
-                lblTFA.Font = CryptoMain.Eng_Comfortaa;
-                TFAPassword.Font = CryptoMain.Eng_Comfortaa;
-                SessionID.Font = CryptoMain.Eng_Comfortaa;
-                generate.Font = CryptoMain.Eng_Comfortaa;
-            }
+            lblPrivKey.Font = CryptoMain.HuninnFont;
+            lblPubKey.Font = CryptoMain.HuninnFont;
+            lblSessionID.Font = CryptoMain.HuninnFont;
+            lblSelectLength.Font = CryptoMain.HuninnFont;
+            lblEncryptNote.Font = CryptoMain.HuninnFont;
+            lblKeyFile.Font = CryptoMain.HuninnFontHighlight;
+            lblTFA.Font = CryptoMain.HuninnFont;
+            TFAPassword.Font = CryptoMain.HuninnFont;
+            SessionID.Font = CryptoMain.HuninnFont;
+            generate.Font = CryptoMain.HuninnFont;
         }
 
         private void Keypairs_Load(object sender, EventArgs e)

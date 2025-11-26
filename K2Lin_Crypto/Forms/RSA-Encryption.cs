@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
@@ -11,33 +11,16 @@ namespace K2Lin_Crypto.Forms
         public Encryption()
         {
             InitializeComponent();
-            string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
-            if (selLanguage.Contains("zh"))
-            {
-                lblReciverPubKey.Font = CryptoMain.zhHans_waresu;
-                lblSessionID.Font = CryptoMain.zhHans_waresu;
-                EncryptSessionID.Font = CryptoMain.zhHans_waresu;
-                lblTextEncrypt.Font = CryptoMain.zhHans_waresuHighlight;
-                lblCiperText.Font = CryptoMain.zhHans_waresuHighlight;
-                ReceiverPublic.Font = CryptoMain.zhHans_waresu;
-                EncryptoText.Font = CryptoMain.zhHans_waresu;
-                EncryptButton.Font = CryptoMain.zhHans_waresu;
-                EncryptoResult.Font = CryptoMain.zhHans_waresu;
-                CopyEncryptedText.Font = CryptoMain.zhHans_waresu;
-            }
-            else
-            {
-                lblReciverPubKey.Font = CryptoMain.Eng_Comfortaa;
-                lblSessionID.Font = CryptoMain.Eng_Comfortaa;
-                EncryptSessionID.Font = CryptoMain.Eng_Comfortaa;
-                lblTextEncrypt.Font = CryptoMain.Eng_ComfortaaHighlight;
-                lblCiperText.Font = CryptoMain.Eng_ComfortaaHighlight;
-                ReceiverPublic.Font = CryptoMain.zhHans_waresu;
-                EncryptoText.Font = CryptoMain.zhHans_waresu;
-                EncryptButton.Font = CryptoMain.Eng_Comfortaa;
-                EncryptoResult.Font = CryptoMain.zhHans_waresu;
-                CopyEncryptedText.Font = CryptoMain.Eng_Comfortaa;
-            }
+            lblReciverPubKey.Font = CryptoMain.HuninnFont;
+            lblSessionID.Font = CryptoMain.HuninnFont;
+            EncryptSessionID.Font = CryptoMain.HuninnFont;
+            lblTextEncrypt.Font = CryptoMain.HuninnFontHighlight;
+            lblCiperText.Font = CryptoMain.HuninnFontHighlight;
+            ReceiverPublic.Font = CryptoMain.HuninnFont;
+            EncryptoText.Font = CryptoMain.HuninnFont;
+            EncryptButton.Font = CryptoMain.HuninnFont;
+            EncryptoResult.Font = CryptoMain.HuninnFont;
+            CopyEncryptedText.Font = CryptoMain.HuninnFont;
         }
 
         private void EncryptButton_Click(object sender, EventArgs e)

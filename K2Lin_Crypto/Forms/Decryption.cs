@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
@@ -14,34 +14,16 @@ namespace K2Lin_Crypto.Forms
         {
             InitializeComponent();
             SessionID.Text = CryptoMain.SessionID;
-            string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
-            if (selLanguage.Contains("zh"))
-            {
-                SessionID.Font = CryptoMain.zhHans_waresu;
-                lblSessionID.Font = CryptoMain.zhHans_waresu;
-                lblDecryptedText.Font = CryptoMain.zhHans_waresuHighlight;
-                lblTextDecrypt.Font = CryptoMain.zhHans_waresuHighlight;
-                CopyPublicKey.Font = CryptoMain.zhHans_waresu;
-                CopyDecryptedText.Font = CryptoMain.zhHans_waresu;
-                DecryptButton.Font = CryptoMain.zhHans_waresu;
-                DecryptoResult.Font = CryptoMain.zhHans_waresu;
-                DecryptoText.Font = CryptoMain.zhHans_waresu;
-                SessionIDIncorrect.Font = CryptoMain.zhHans_waresu;
-            }
-            else
-            {
-                SessionID.Font = CryptoMain.Eng_Comfortaa;
-                lblSessionID.Font = CryptoMain.Eng_Comfortaa;
-                lblDecryptedText.Font = CryptoMain.Eng_ComfortaaHighlight;
-                lblTextDecrypt.Font = CryptoMain.Eng_ComfortaaHighlight;
-                CopyPublicKey.Font = CryptoMain.Eng_Comfortaa;
-                CopyDecryptedText.Font = CryptoMain.Eng_Comfortaa;
-                DecryptButton.Font = CryptoMain.Eng_Comfortaa;
-                DecryptoResult.Font = CryptoMain.zhHans_waresu;
-                DecryptoText.Font = CryptoMain.zhHans_waresu;
-                SessionIDIncorrect.Font = CryptoMain.Eng_Comfortaa;
-            }
-
+            SessionID.Font = CryptoMain.HuninnFont;
+            lblSessionID.Font = CryptoMain.HuninnFont;
+            lblDecryptedText.Font = CryptoMain.HuninnFontHighlight;
+            lblTextDecrypt.Font = CryptoMain.HuninnFontHighlight;
+            CopyPublicKey.Font = CryptoMain.HuninnFont;
+            CopyDecryptedText.Font = CryptoMain.HuninnFont;
+            DecryptButton.Font = CryptoMain.HuninnFont;
+            DecryptoResult.Font = CryptoMain.HuninnFont;
+            DecryptoText.Font = CryptoMain.HuninnFont;
+            SessionIDIncorrect.Font = CryptoMain.HuninnFont;
         }
 
         private void CopyPublicKey_Click(object sender, EventArgs e)

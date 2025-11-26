@@ -154,7 +154,7 @@
     <value>True</value>
   </data>
   <data name="lblSessionID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 15pt</value>
+    <value>jf openhuninn, 15pt</value>
   </data>
   <data name="lblSessionID.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 62</value>
@@ -211,7 +211,7 @@
     <value>Left</value>
   </data>
   <data name="CopyPublicKey.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 9pt</value>
+    <value>jf openhuninn, 9pt</value>
   </data>
   <data name="CopyPublicKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -247,7 +247,7 @@
     <value>True</value>
   </data>
   <data name="lblTextDecrypt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 20pt</value>
+    <value>jf openhuninn, 20pt</value>
   </data>
   <data name="lblTextDecrypt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -307,7 +307,7 @@
     <value>Right</value>
   </data>
   <data name="DecryptButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 9pt</value>
+    <value>jf openhuninn, 9pt</value>
   </data>
   <data name="DecryptButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -343,7 +343,7 @@
     <value>True</value>
   </data>
   <data name="lblDecryptedText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 20pt</value>
+    <value>jf openhuninn, 20pt</value>
   </data>
   <data name="lblDecryptedText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -376,7 +376,7 @@
     <value>Right</value>
   </data>
   <data name="CopyDecryptedText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 9pt</value>
+    <value>jf openhuninn, 9pt</value>
   </data>
   <data name="CopyDecryptedText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

@@ -127,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblPubKey.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 8.25pt</value>
+    <value>jf openhuninn, 8.25pt</value>
   </data>
   <data name="lblPubKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -163,7 +163,7 @@
     <value>True</value>
   </data>
   <data name="lblPrivKey.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 8.25pt</value>
+    <value>jf openhuninn, 8.25pt</value>
   </data>
   <data name="lblPrivKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -346,7 +346,7 @@
     <value>True</value>
   </data>
   <data name="lblSelectLength.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 8.25pt</value>
+    <value>jf openhuninn, 8.25pt</value>
   </data>
   <data name="lblSelectLength.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -439,7 +439,7 @@
     <value>True</value>
   </data>
   <data name="lblSessionID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 8.25pt</value>
+    <value>jf openhuninn, 8.25pt</value>
   </data>
   <data name="lblSessionID.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -487,7 +487,7 @@
     <value>True</value>
   </data>
   <data name="lblKeyFile.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 15.25pt</value>
+    <value>jf openhuninn, 15.25pt</value>
   </data>
   <data name="lblKeyFile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -523,7 +523,7 @@
     <value>True</value>
   </data>
   <data name="lblEncryptNote.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 16pt</value>
+    <value>jf openhuninn, 16pt</value>
   </data>
   <data name="lblEncryptNote.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -565,7 +565,7 @@
     <value>True</value>
   </data>
   <data name="lblTFA.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 16pt</value>
+    <value>jf openhuninn, 16pt</value>
   </data>
   <data name="lblTFA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -598,7 +598,7 @@
     <value>Right</value>
   </data>
   <data name="TFAPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 8pt</value>
+    <value>jf openhuninn, 8pt</value>
   </data>
   <data name="TFAPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>496, 369</value>
