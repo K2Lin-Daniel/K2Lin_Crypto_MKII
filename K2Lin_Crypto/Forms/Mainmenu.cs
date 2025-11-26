@@ -16,17 +16,6 @@ namespace K2Lin_Crypto.Forms
         public Mainmenu()
         {
             InitializeComponent();
-            string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
-            if (selLanguage.Contains("zh"))
-            {
-                Welcome.Font = CryptoMain.zhHans_waresuHighlight;
-                tips.Font = CryptoMain.zhHans_waresu;
-            }
-            else
-            {
-                Welcome.Font = CryptoMain.Eng_ComfortaaHighlight;
-                tips.Font = CryptoMain.Eng_Comfortaa;
-            }
         }
     }
 }
