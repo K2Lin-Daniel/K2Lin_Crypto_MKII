@@ -17,31 +17,15 @@ namespace K2Lin_Crypto.Forms
         public AESEncrypt()
         {
             InitializeComponent();
-            string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
-            if (selLanguage.Contains("zh"))
-            {
-                lblOriginText.Font = CryptoMain.zhHans_waresu;
-                lblPassKey.Font = CryptoMain.zhHans_waresu;
-                lblSessionID.Font = CryptoMain.zhHans_waresu;
-                OriginText.Font = CryptoMain.zhHans_waresu;
-                CryptButton.Font = CryptoMain.zhHans_waresu;
-                ResultText.Font = CryptoMain.zhHans_waresu;
-                KeyID.Font = CryptoMain.zhHans_waresu;
-                CopyDecryptedText.Font = CryptoMain.zhHans_waresu;
-                GenerateKey.Font = CryptoMain.zhHans_waresu;
-            }
-            else
-            {
-                lblOriginText.Font = CryptoMain.Eng_Comfortaa;
-                lblPassKey.Font = CryptoMain.Eng_Comfortaa;
-                lblSessionID.Font = CryptoMain.Eng_Comfortaa;
-                OriginText.Font = CryptoMain.Eng_Comfortaa;
-                CryptButton.Font = CryptoMain.Eng_Comfortaa;
-                ResultText.Font = CryptoMain.Eng_Comfortaa;
-                KeyID.Font = CryptoMain.Eng_Comfortaa;
-                CopyDecryptedText.Font = CryptoMain.Eng_Comfortaa;
-                GenerateKey.Font = CryptoMain.Eng_Comfortaa;
-            }
+            lblOriginText.Font = CryptoMain.HuninnFont;
+            lblPassKey.Font = CryptoMain.HuninnFont;
+            lblSessionID.Font = CryptoMain.HuninnFont;
+            OriginText.Font = CryptoMain.HuninnFont;
+            CryptButton.Font = CryptoMain.HuninnFont;
+            ResultText.Font = CryptoMain.HuninnFont;
+            KeyID.Font = CryptoMain.HuninnFont;
+            CopyDecryptedText.Font = CryptoMain.HuninnFont;
+            GenerateKey.Font = CryptoMain.HuninnFont;
         }
 
         private void AESEncrypt_Load(object sender, EventArgs e)

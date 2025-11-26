@@ -178,7 +178,7 @@
     <value>True</value>
   </data>
   <data name="lblReciverPubKey.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 15pt</value>
+    <value>jf openhuninn, 15pt</value>
   </data>
   <data name="lblReciverPubKey.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 62</value>
@@ -211,7 +211,7 @@
     <value>True</value>
   </data>
   <data name="lblSessionID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 15pt</value>
+    <value>jf openhuninn, 15pt</value>
   </data>
   <data name="lblSessionID.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 122</value>
@@ -268,7 +268,7 @@
     <value>True</value>
   </data>
   <data name="lblTextEncrypt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 20pt</value>
+    <value>jf openhuninn, 20pt</value>
   </data>
   <data name="lblTextEncrypt.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 193</value>
@@ -328,7 +328,7 @@
     <value>True</value>
   </data>
   <data name="lblCiperText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 20pt</value>
+    <value>jf openhuninn, 20pt</value>
   </data>
   <data name="lblCiperText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -385,7 +385,7 @@
     <value>Right</value>
   </data>
   <data name="EncryptButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 9pt</value>
+    <value>jf openhuninn, 9pt</value>
   </data>
   <data name="EncryptButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>637, 297</value>
@@ -415,7 +415,7 @@
     <value>Right</value>
   </data>
   <data name="CopyEncryptedText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 9pt</value>
+    <value>jf openhuninn, 9pt</value>
   </data>
   <data name="CopyEncryptedText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

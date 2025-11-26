@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Text;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading;
@@ -17,6 +19,34 @@ namespace K2Lin_Crypto
         private Random random;
         private Form activeForm;
         private Dictionary<TabPage, Form> formCache = new Dictionary<TabPage, Form>();
+
+        private static readonly PrivateFontCollection privateFonts = new PrivateFontCollection();
+        public static readonly Font HuninnFont;
+        public static readonly Font HuninnFontHighlight;
+
+        static CryptoMain()
+        {
+            try
+            {
+                string fontPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "jf-openhuninn-2.1.ttf");
+
+                if (!File.Exists(fontPath))
+                {
+                     throw new FileNotFoundException("The font file was not found in the output directory.", fontPath);
+                }
+
+                privateFonts.AddFontFile(fontPath);
+
+                HuninnFont = new Font(privateFonts.Families[0], 12F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+                HuninnFontHighlight = new Font(privateFonts.Families[0], 16F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to load custom font: {ex.Message}. Falling back to default system font.");
+                HuninnFont = new Font("Microsoft YaHei UI", 12F);
+                HuninnFontHighlight = new Font("Microsoft YaHei UI", 16F, FontStyle.Bold);
+            }
+        }
 
         public static string PubKey;
         public static string PrivKey;

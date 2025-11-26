@@ -160,7 +160,7 @@
     <value>Bottom, Right</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comfortaa, 16pt</value>
+    <value>jf openhuninn, 16pt</value>
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
