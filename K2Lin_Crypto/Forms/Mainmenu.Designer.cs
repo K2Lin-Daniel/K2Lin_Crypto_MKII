@@ -1,4 +1,4 @@
-﻿namespace K2Lin_Crypto.Forms
+namespace K2Lin_Crypto.Forms
 {
     partial class Mainmenu
     {
@@ -28,38 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainmenu));
-            this.Welcome = new System.Windows.Forms.Label();
-            this.tips = new System.Windows.Forms.Label();
+            this.Welcome = new MaterialSkin.Controls.MaterialLabel();
+            this.tips = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
-            // 
+            //
             // Welcome
-            // 
-            resources.ApplyResources(this.Welcome, "Welcome");
-            this.Welcome.ForeColor = System.Drawing.Color.SteelBlue;
+            //
+            this.Welcome.Depth = 0;
+            this.Welcome.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Welcome.Location = new System.Drawing.Point(12, 9);
+            this.Welcome.MouseState = MaterialSkin.MouseState.HOVER;
             this.Welcome.Name = "Welcome";
-            // 
+            this.Welcome.Size = new System.Drawing.Size(260, 23);
+            this.Welcome.TabIndex = 0;
+            this.Welcome.Text = "Welcome to K2Lin Crypto!";
+            //
             // tips
-            // 
-            resources.ApplyResources(this.tips, "tips");
-            this.tips.ForeColor = System.Drawing.Color.LightSkyBlue;
+            //
+            this.tips.Depth = 0;
+            this.tips.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tips.Location = new System.Drawing.Point(12, 41);
+            this.tips.MouseState = MaterialSkin.MouseState.HOVER;
             this.tips.Name = "tips";
-            // 
+            this.tips.Size = new System.Drawing.Size(260, 23);
+            this.tips.TabIndex = 1;
+            this.tips.Text = "Select a function from the tabs above.";
+            //
             // Mainmenu
-            // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            resources.ApplyResources(this, "$this");
+            //
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.tips);
             this.Controls.Add(this.Welcome);
             this.Name = "Mainmenu";
+            this.Text = "Mainmenu";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label Welcome;
-        private System.Windows.Forms.Label tips;
+        private MaterialSkin.Controls.MaterialLabel Welcome;
+        private MaterialSkin.Controls.MaterialLabel tips;
     }
 }
