@@ -1,33 +1,26 @@
-﻿using System;
+using System;
 using System.Drawing;
-using System.Drawing.Text;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace K2Lin_Crypto
 {
-    public partial class CryptoMain : Form
+    public partial class CryptoMain : MaterialForm
     {
         //Fields
-        private Button currentButton;
         private Random random;
-        private int tempIndex;
         private Form activeForm;
+        private Dictionary<TabPage, Form> formCache = new Dictionary<TabPage, Form>();
 
-        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
-        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
-        IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
-
-        private PrivateFontCollection fonts = new PrivateFontCollection();
-        private PrivateFontCollection fontsCN = new PrivateFontCollection();
-
-        public static Font Eng_Comfortaa;
-        public static Font Eng_ComfortaaHighlight;
-        public static Font zhHans_waresu;
-        public static Font zhHans_waresuHighlight;
         public static string PubKey;
         public static string PrivKey;
         public static string SessionID;
@@ -42,60 +35,62 @@ namespace K2Lin_Crypto
             GenerateNewKey();
             DetectLanguage();
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None; // no borders
-            this.DoubleBuffered = true;
-            this.SetStyle(ControlStyles.ResizeRedraw, true); // this is to avoid visual artifacts
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+
             random = new Random();
-            LoadFonts();
-            string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
-            if (selLanguage.Contains("zh"))
+            materialTabControl1.SelectedIndexChanged += new EventHandler(materialTabControl1_SelectedIndexChanged);
+            OpenChildForm(new Forms.Mainmenu(), materialTabControl1.TabPages[0]);
+        }
+
+        private void materialTabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.Text = materialTabControl1.SelectedTab.Text;
+            if (formCache.ContainsKey(materialTabControl1.SelectedTab))
             {
-                buttonMainmenu.Font = zhHans_waresu;
-                buttonDecryption.Font = zhHans_waresu;
-                buttonEncryption.Font = zhHans_waresu;
-                buttonKeypairs.Font = zhHans_waresu;
-                buttonKeypairs.Font = zhHans_waresu;
-                buttonAbout.Font = zhHans_waresu;
-                buttonAESEncrypt.Font = zhHans_waresu;
-                buttonPNGStegano.Font = zhHans_waresu;
-                lblTitle.Font = zhHans_waresu;
+                OpenChildForm(formCache[materialTabControl1.SelectedTab], materialTabControl1.SelectedTab);
             }
             else
             {
-                buttonMainmenu.Font = Eng_Comfortaa;
-                buttonDecryption.Font = Eng_Comfortaa;
-                buttonEncryption.Font = Eng_Comfortaa;
-                buttonKeypairs.Font = Eng_Comfortaa;
-                buttonKeypairs.Font = Eng_Comfortaa;
-                buttonAbout.Font = Eng_Comfortaa;
-                buttonAESEncrypt.Font = Eng_Comfortaa;
-                buttonPNGStegano.Font = Eng_Comfortaa;
-                lblTitle.Font = Eng_Comfortaa;
+                switch (materialTabControl1.SelectedIndex)
+                {
+                    case 0:
+                        OpenChildForm(new Forms.Mainmenu(), materialTabControl1.SelectedTab);
+                        break;
+                    case 1:
+                        OpenChildForm(new Forms.Encryption(), materialTabControl1.SelectedTab);
+                        break;
+                    case 2:
+                        OpenChildForm(new Forms.Decryption(), materialTabControl1.SelectedTab);
+                        break;
+                    case 3:
+                        OpenChildForm(new Forms.Keypairs(), materialTabControl1.SelectedTab);
+                        break;
+                    case 4:
+                        OpenChildForm(new Forms.AESEncrypt(), materialTabControl1.SelectedTab);
+                        break;
+                    case 5:
+                        OpenChildForm(new Forms.PNGSteganography(), materialTabControl1.SelectedTab);
+                        break;
+                    case 6:
+                        OpenChildForm(new Forms.About(), materialTabControl1.SelectedTab);
+                        break;
+                }
             }
-            OpenChildForm(new Forms.Mainmenu(), buttonMainmenu);
         }
 
         private static void DetectLanguage()
         {
-            //Get system language, This method gets the regional language
-            //获取系统语言此方法获取区域语言
-            //string localLanguage = System.Threading.Thread.CurrentThread.CurrentCulture.Name;
-            //Get the default language when the system is installed
-            //系统安装时的默认语言
-            //string localLanguage = System.Globalization.CultureInfo.InstalledUICulture.Name;
-            //Get system regional language
-            //获取系统区域性语言
             string localLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
             if (localLanguage.Contains("zh"))
             {
-                //Set the software language to Chinese
-                //设置软件语言为中文
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-Hans");
             }
             else
             {
-                //Set to default language
-                //设置为默认语言
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("");
             }
         }
@@ -124,162 +119,26 @@ namespace K2Lin_Crypto
             string PubKeyXMLformat = PublicKey.SelectSingleNode(pubkeypath).InnerText;
             SessionID = Math.Abs(PubKeyXMLformat.GetHashCode()).ToString();
         }
-        //Methods
-        private void LoadFonts()
-        {
-            byte[] fontData = Properties.Resources.Comfortaa;
-            IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
-            System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
-            uint dummy = 0;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.Comfortaa.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.Comfortaa.Length, IntPtr.Zero, ref dummy);
-            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
-            Eng_Comfortaa = new Font(fonts.Families[0], 16.0F);
-            Eng_ComfortaaHighlight = new Font(fonts.Families[0], 20.0F);
+        private void OpenChildForm(Form childForm, TabPage tabPage)
+        {
+            if (activeForm != null && activeForm != childForm)
+                activeForm.Hide();
 
-            byte[] fontDataCN = Properties.Resources.waresu;
-            IntPtr fontPtrCN = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontDataCN.Length);
-            System.Runtime.InteropServices.Marshal.Copy(fontDataCN, 0, fontPtrCN, fontDataCN.Length);
-            uint dummyCN = 0;
-            fontsCN.AddMemoryFont(fontPtrCN, Properties.Resources.waresu.Length);
-            AddFontMemResourceEx(fontPtrCN, (uint)Properties.Resources.waresu.Length, IntPtr.Zero, ref dummyCN);
-            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtrCN);
-
-            zhHans_waresu = new Font(fontsCN.Families[0], 16.0F);
-            zhHans_waresuHighlight = new Font(fontsCN.Families[0], 20.0F);
-        }
-        private Color SelectThemeColor()
-        {
-            int index = random.Next(ThemeColor.ColorList.Count);
-            while (tempIndex == index)
-            {
-                index = random.Next(ThemeColor.ColorList.Count);
-            }
-            tempIndex = index;
-            string color = ThemeColor.ColorList[index];
-            return ColorTranslator.FromHtml(color);
-        }
-        private void ActivateButton(object btnSender)
-        {
-            if (btnSender != null)
-            {
-                if (currentButton != (Button)btnSender)
-                {
-                    DisableButton();
-                    Color color = SelectThemeColor();
-                    currentButton = (Button)btnSender;
-                    currentButton.BackColor = color;
-                    currentButton.ForeColor = Color.White;
-                    string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
-                    if (selLanguage.Contains("zh"))
-                    {
-                        currentButton.Font = zhHans_waresuHighlight;
-                    }
-                    else
-                    {
-                        currentButton.Font = Eng_ComfortaaHighlight;
-                    }
-                    panelTitleBar.BackColor = color;
-                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
-                    ThemeColor.PrimaryColor = color;
-                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3);
-                }
-            }
-        }
-        private void DisableButton()
-        {
-            foreach (Control previousBtn in panelMenu.Controls)
-            {
-                if (previousBtn.GetType() == typeof(Button))
-                {
-                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
-                    previousBtn.ForeColor = Color.Gainsboro;
-                    string selLanguage = System.Globalization.CultureInfo.CurrentUICulture.Name;
-                    if (selLanguage.Contains("zh"))
-                    {
-                        previousBtn.Font = zhHans_waresu;
-                    }
-                    else
-                    {
-                        previousBtn.Font = Eng_Comfortaa;
-                    }
-                }
-            }
-        }
-        private void OpenChildForm(Form childForm, object btnSender)
-        {   
-            if (activeForm != null)
-                activeForm.Close();
-            ActivateButton(btnSender);
             activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            this.panelDesktopPane.Controls.Add(childForm);
-            this.panelDesktopPane.Tag = childForm;
+
+            if (!formCache.ContainsKey(tabPage))
+            {
+                formCache.Add(tabPage, childForm);
+                childForm.TopLevel = false;
+                childForm.FormBorderStyle = FormBorderStyle.None;
+                childForm.Dock = DockStyle.Fill;
+                tabPage.Controls.Add(childForm);
+            }
+
             childForm.BringToFront();
             childForm.Show();
-            lblTitle.Text = currentButton.Text;
         }
 
-        private void buttonMainmenu_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.Mainmenu(), sender);
-        }
-
-        private void buttonDecryption_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.Decryption(), sender);
-        }
-
-        private void buttonEncryption_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.Encryption(), sender);
-        }
-
-        private void buttonKeypairs_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.Keypairs(), sender);
-        }
-
-        private void buttonAbout_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.About(), sender);
-        }
-
-        private void AESEncrypt_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.AESEncrypt(), sender);
-        }
-
-        private void buttonPNGStegano_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.PNGSteganography(), sender);
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
-        }
-
-        private void closebtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void minimizebtn_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace K2Lin_Crypto
+namespace K2Lin_Crypto
 {
     partial class CryptoMain
     {
@@ -29,217 +29,140 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CryptoMain));
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.buttonPNGStegano = new System.Windows.Forms.Button();
-            this.buttonAESEncrypt = new System.Windows.Forms.Button();
-            this.buttonAbout = new System.Windows.Forms.Button();
-            this.buttonKeypairs = new System.Windows.Forms.Button();
-            this.buttonDecryption = new System.Windows.Forms.Button();
-            this.buttonEncryption = new System.Windows.Forms.Button();
-            this.buttonMainmenu = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.minimizebtn = new System.Windows.Forms.PictureBox();
-            this.maximizebtn = new System.Windows.Forms.PictureBox();
-            this.closebtn = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.panelDesktopPane = new System.Windows.Forms.Panel();
-            this.panelMenu.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.minimizebtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maximizebtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closebtn)).BeginInit();
+            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.materialTabControl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.panelMenu.Controls.Add(this.buttonPNGStegano);
-            this.panelMenu.Controls.Add(this.buttonAESEncrypt);
-            this.panelMenu.Controls.Add(this.buttonAbout);
-            this.panelMenu.Controls.Add(this.buttonKeypairs);
-            this.panelMenu.Controls.Add(this.buttonDecryption);
-            this.panelMenu.Controls.Add(this.buttonEncryption);
-            this.panelMenu.Controls.Add(this.buttonMainmenu);
-            this.panelMenu.Controls.Add(this.panelLogo);
-            resources.ApplyResources(this.panelMenu, "panelMenu");
-            this.panelMenu.Name = "panelMenu";
-            // 
-            // buttonPNGStegano
-            // 
-            resources.ApplyResources(this.buttonPNGStegano, "buttonPNGStegano");
-            this.buttonPNGStegano.FlatAppearance.BorderSize = 0;
-            this.buttonPNGStegano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPNGStegano.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonPNGStegano.Name = "buttonPNGStegano";
-            this.buttonPNGStegano.UseVisualStyleBackColor = true;
-            this.buttonPNGStegano.Click += new System.EventHandler(this.buttonPNGStegano_Click);
-            // 
-            // buttonAESEncrypt
-            // 
-            resources.ApplyResources(this.buttonAESEncrypt, "buttonAESEncrypt");
-            this.buttonAESEncrypt.FlatAppearance.BorderSize = 0;
-            this.buttonAESEncrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAESEncrypt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonAESEncrypt.Name = "buttonAESEncrypt";
-            this.buttonAESEncrypt.UseVisualStyleBackColor = true;
-            this.buttonAESEncrypt.Click += new System.EventHandler(this.AESEncrypt_Click);
-            // 
-            // buttonAbout
-            // 
-            resources.ApplyResources(this.buttonAbout, "buttonAbout");
-            this.buttonAbout.FlatAppearance.BorderSize = 0;
-            this.buttonAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAbout.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonAbout.Image = global::K2Lin_Crypto.Properties.Resources.book;
-            this.buttonAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAbout.Name = "buttonAbout";
-            this.buttonAbout.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.buttonAbout.UseVisualStyleBackColor = true;
-            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
-            // 
-            // buttonKeypairs
-            // 
-            resources.ApplyResources(this.buttonKeypairs, "buttonKeypairs");
-            this.buttonKeypairs.FlatAppearance.BorderSize = 0;
-            this.buttonKeypairs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonKeypairs.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonKeypairs.Image = global::K2Lin_Crypto.Properties.Resources.box;
-            this.buttonKeypairs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonKeypairs.Name = "buttonKeypairs";
-            this.buttonKeypairs.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.buttonKeypairs.UseVisualStyleBackColor = true;
-            this.buttonKeypairs.Click += new System.EventHandler(this.buttonKeypairs_Click);
-            // 
-            // buttonDecryption
-            // 
-            resources.ApplyResources(this.buttonDecryption, "buttonDecryption");
-            this.buttonDecryption.FlatAppearance.BorderSize = 0;
-            this.buttonDecryption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDecryption.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonDecryption.Image = global::K2Lin_Crypto.Properties.Resources.key;
-            this.buttonDecryption.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDecryption.Name = "buttonDecryption";
-            this.buttonDecryption.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.buttonDecryption.UseVisualStyleBackColor = true;
-            this.buttonDecryption.Click += new System.EventHandler(this.buttonDecryption_Click);
-            // 
-            // buttonEncryption
-            // 
-            resources.ApplyResources(this.buttonEncryption, "buttonEncryption");
-            this.buttonEncryption.FlatAppearance.BorderSize = 0;
-            this.buttonEncryption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEncryption.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonEncryption.Image = global::K2Lin_Crypto.Properties.Resources.padlock;
-            this.buttonEncryption.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEncryption.Name = "buttonEncryption";
-            this.buttonEncryption.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.buttonEncryption.UseVisualStyleBackColor = true;
-            this.buttonEncryption.Click += new System.EventHandler(this.buttonEncryption_Click);
-            // 
-            // buttonMainmenu
-            // 
-            resources.ApplyResources(this.buttonMainmenu, "buttonMainmenu");
-            this.buttonMainmenu.FlatAppearance.BorderSize = 0;
-            this.buttonMainmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMainmenu.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonMainmenu.Image = global::K2Lin_Crypto.Properties.Resources.home;
-            this.buttonMainmenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMainmenu.Name = "buttonMainmenu";
-            this.buttonMainmenu.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.buttonMainmenu.UseVisualStyleBackColor = true;
-            this.buttonMainmenu.Click += new System.EventHandler(this.buttonMainmenu_Click);
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(48)))));
-            this.panelLogo.BackgroundImage = global::K2Lin_Crypto.Properties.Resources.Crypto_Logo_Small_Ver3;
-            resources.ApplyResources(this.panelLogo, "panelLogo");
-            this.panelLogo.Name = "panelLogo";
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.panelTitleBar.Controls.Add(this.minimizebtn);
-            this.panelTitleBar.Controls.Add(this.maximizebtn);
-            this.panelTitleBar.Controls.Add(this.closebtn);
-            this.panelTitleBar.Controls.Add(this.lblTitle);
-            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
-            this.panelTitleBar.ForeColor = System.Drawing.Color.Black;
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // minimizebtn
-            // 
-            resources.ApplyResources(this.minimizebtn, "minimizebtn");
-            this.minimizebtn.Image = global::K2Lin_Crypto.Properties.Resources.minimize_window_32;
-            this.minimizebtn.Name = "minimizebtn";
-            this.minimizebtn.TabStop = false;
-            this.minimizebtn.Click += new System.EventHandler(this.minimizebtn_Click);
-            // 
-            // maximizebtn
-            // 
-            resources.ApplyResources(this.maximizebtn, "maximizebtn");
-            this.maximizebtn.Image = global::K2Lin_Crypto.Properties.Resources.maximize_window_32;
-            this.maximizebtn.Name = "maximizebtn";
-            this.maximizebtn.TabStop = false;
-            this.maximizebtn.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // closebtn
-            // 
-            resources.ApplyResources(this.closebtn, "closebtn");
-            this.closebtn.Image = global::K2Lin_Crypto.Properties.Resources.close_window_32;
-            this.closebtn.Name = "closebtn";
-            this.closebtn.TabStop = false;
-            this.closebtn.Click += new System.EventHandler(this.closebtn_Click);
-            // 
+            //
+            // materialTabControl1
+            //
+            this.materialTabControl1.Controls.Add(this.tabPage1);
+            this.materialTabControl1.Controls.Add(this.tabPage2);
+            this.materialTabControl1.Controls.Add(this.tabPage3);
+            this.materialTabControl1.Controls.Add(this.tabPage4);
+            this.materialTabControl1.Controls.Add(this.tabPage5);
+            this.materialTabControl1.Controls.Add(this.tabPage6);
+            this.materialTabControl1.Controls.Add(this.tabPage7);
+            this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialTabControl1.Location = new System.Drawing.Point(3, 64);
+            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl1.Multiline = true;
+            this.materialTabControl1.Name = "materialTabControl1";
+            this.materialTabControl1.SelectedIndex = 0;
+            this.materialTabControl1.Size = new System.Drawing.Size(1274, 653);
+            this.materialTabControl1.TabIndex = 0;
+            //
+            // tabPage1
+            //
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1266, 627);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Main Menu";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            //
+            // tabPage2
+            //
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1266, 627);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Encryption";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            //
+            // tabPage3
+            //
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1266, 627);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Decryption";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            //
+            // tabPage4
+            //
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1266, 627);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Keypairs";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            //
+            // tabPage5
+            //
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1266, 627);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "AES Encrypt";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            //
+            // tabPage6
+            //
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1266, 627);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "PNG Stegano";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            //
+            // tabPage7
+            //
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1266, 627);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "About";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            //
+            // panelDesktopPane
+            //
+            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPane.Location = new System.Drawing.Point(3, 64);
+            this.panelDesktopPane.Name = "panelDesktopPane";
+            this.panelDesktopPane.Size = new System.Drawing.Size(1274, 653);
+            this.panelDesktopPane.TabIndex = 1;
+            //
             // lblTitle
-            // 
+            //
             resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Name = "lblTitle";
-            // 
-            // panelDesktopPane
-            // 
-            this.panelDesktopPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            resources.ApplyResources(this.panelDesktopPane, "panelDesktopPane");
-            this.panelDesktopPane.Name = "panelDesktopPane";
-            // 
+            //
             // CryptoMain
-            // 
+            //
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelDesktopPane);
-            this.Controls.Add(this.panelTitleBar);
-            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.materialTabControl1);
             this.Name = "CryptoMain";
-            this.panelMenu.ResumeLayout(false);
-            this.panelTitleBar.ResumeLayout(false);
-            this.panelTitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.minimizebtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maximizebtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closebtn)).EndInit();
+            this.materialTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Button buttonMainmenu;
-        private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button buttonKeypairs;
-        private System.Windows.Forms.Button buttonDecryption;
-        private System.Windows.Forms.Button buttonEncryption;
-        private System.Windows.Forms.Button buttonAbout;
-        private System.Windows.Forms.Panel panelTitleBar;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.PictureBox closebtn;
-        private System.Windows.Forms.PictureBox maximizebtn;
-        private System.Windows.Forms.PictureBox minimizebtn;
-        private System.Windows.Forms.Panel panelDesktopPane;
-        private System.Windows.Forms.Button buttonAESEncrypt;
-        private System.Windows.Forms.Button buttonPNGStegano;
+        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
     }
 }
-
