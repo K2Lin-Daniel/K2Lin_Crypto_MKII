@@ -53,7 +53,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.panelMenu.Controls.Add(this.buttonPNGStegano);
             this.panelMenu.Controls.Add(this.buttonAESEncrypt);
             this.panelMenu.Controls.Add(this.buttonAbout);
@@ -69,7 +69,8 @@
             // 
             resources.ApplyResources(this.buttonPNGStegano, "buttonPNGStegano");
             this.buttonPNGStegano.FlatAppearance.BorderSize = 0;
-            this.buttonPNGStegano.ForeColor = System.Drawing.Color.Honeydew;
+            this.buttonPNGStegano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPNGStegano.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonPNGStegano.Name = "buttonPNGStegano";
             this.buttonPNGStegano.UseVisualStyleBackColor = true;
             this.buttonPNGStegano.Click += new System.EventHandler(this.buttonPNGStegano_Click);
@@ -78,7 +79,8 @@
             // 
             resources.ApplyResources(this.buttonAESEncrypt, "buttonAESEncrypt");
             this.buttonAESEncrypt.FlatAppearance.BorderSize = 0;
-            this.buttonAESEncrypt.ForeColor = System.Drawing.Color.Honeydew;
+            this.buttonAESEncrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAESEncrypt.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonAESEncrypt.Name = "buttonAESEncrypt";
             this.buttonAESEncrypt.UseVisualStyleBackColor = true;
             this.buttonAESEncrypt.Click += new System.EventHandler(this.AESEncrypt_Click);
@@ -87,9 +89,12 @@
             // 
             resources.ApplyResources(this.buttonAbout, "buttonAbout");
             this.buttonAbout.FlatAppearance.BorderSize = 0;
-            this.buttonAbout.ForeColor = System.Drawing.Color.Honeydew;
+            this.buttonAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAbout.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonAbout.Image = global::K2Lin_Crypto.Properties.Resources.book;
+            this.buttonAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAbout.Name = "buttonAbout";
+            this.buttonAbout.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.buttonAbout.UseVisualStyleBackColor = true;
             this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
@@ -97,9 +102,12 @@
             // 
             resources.ApplyResources(this.buttonKeypairs, "buttonKeypairs");
             this.buttonKeypairs.FlatAppearance.BorderSize = 0;
-            this.buttonKeypairs.ForeColor = System.Drawing.Color.Honeydew;
+            this.buttonKeypairs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonKeypairs.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonKeypairs.Image = global::K2Lin_Crypto.Properties.Resources.box;
+            this.buttonKeypairs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonKeypairs.Name = "buttonKeypairs";
+            this.buttonKeypairs.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.buttonKeypairs.UseVisualStyleBackColor = true;
             this.buttonKeypairs.Click += new System.EventHandler(this.buttonKeypairs_Click);
             // 
@@ -107,9 +115,12 @@
             // 
             resources.ApplyResources(this.buttonDecryption, "buttonDecryption");
             this.buttonDecryption.FlatAppearance.BorderSize = 0;
-            this.buttonDecryption.ForeColor = System.Drawing.Color.Honeydew;
+            this.buttonDecryption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDecryption.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonDecryption.Image = global::K2Lin_Crypto.Properties.Resources.key;
+            this.buttonDecryption.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDecryption.Name = "buttonDecryption";
+            this.buttonDecryption.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.buttonDecryption.UseVisualStyleBackColor = true;
             this.buttonDecryption.Click += new System.EventHandler(this.buttonDecryption_Click);
             // 
@@ -117,9 +128,12 @@
             // 
             resources.ApplyResources(this.buttonEncryption, "buttonEncryption");
             this.buttonEncryption.FlatAppearance.BorderSize = 0;
-            this.buttonEncryption.ForeColor = System.Drawing.Color.Honeydew;
+            this.buttonEncryption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEncryption.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonEncryption.Image = global::K2Lin_Crypto.Properties.Resources.padlock;
+            this.buttonEncryption.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonEncryption.Name = "buttonEncryption";
+            this.buttonEncryption.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.buttonEncryption.UseVisualStyleBackColor = true;
             this.buttonEncryption.Click += new System.EventHandler(this.buttonEncryption_Click);
             // 
@@ -127,22 +141,25 @@
             // 
             resources.ApplyResources(this.buttonMainmenu, "buttonMainmenu");
             this.buttonMainmenu.FlatAppearance.BorderSize = 0;
-            this.buttonMainmenu.ForeColor = System.Drawing.Color.Honeydew;
+            this.buttonMainmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMainmenu.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonMainmenu.Image = global::K2Lin_Crypto.Properties.Resources.home;
+            this.buttonMainmenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonMainmenu.Name = "buttonMainmenu";
+            this.buttonMainmenu.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.buttonMainmenu.UseVisualStyleBackColor = true;
             this.buttonMainmenu.Click += new System.EventHandler(this.buttonMainmenu_Click);
             // 
             // panelLogo
             // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(48)))));
             this.panelLogo.BackgroundImage = global::K2Lin_Crypto.Properties.Resources.Crypto_Logo_Small_Ver3;
             resources.ApplyResources(this.panelLogo, "panelLogo");
             this.panelLogo.Name = "panelLogo";
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.CadetBlue;
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.panelTitleBar.Controls.Add(this.minimizebtn);
             this.panelTitleBar.Controls.Add(this.maximizebtn);
             this.panelTitleBar.Controls.Add(this.closebtn);
@@ -184,6 +201,7 @@
             // 
             // panelDesktopPane
             // 
+            this.panelDesktopPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             resources.ApplyResources(this.panelDesktopPane, "panelDesktopPane");
             this.panelDesktopPane.Name = "panelDesktopPane";
             // 
