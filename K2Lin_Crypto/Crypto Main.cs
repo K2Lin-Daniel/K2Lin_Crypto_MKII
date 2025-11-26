@@ -1,8 +1,5 @@
 using System;
-using System.Drawing;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
@@ -55,27 +52,27 @@ namespace K2Lin_Crypto
             }
             else
             {
-                switch (materialTabControl1.SelectedIndex)
+                switch (materialTabControl1.SelectedTab.Name)
                 {
-                    case 0:
+                    case "tabPage1":
                         OpenChildForm(new Forms.Mainmenu(), materialTabControl1.SelectedTab);
                         break;
-                    case 1:
+                    case "tabPage2":
                         OpenChildForm(new Forms.Encryption(), materialTabControl1.SelectedTab);
                         break;
-                    case 2:
+                    case "tabPage3":
                         OpenChildForm(new Forms.Decryption(), materialTabControl1.SelectedTab);
                         break;
-                    case 3:
+                    case "tabPage4":
                         OpenChildForm(new Forms.Keypairs(), materialTabControl1.SelectedTab);
                         break;
-                    case 4:
-                        OpenChildForm(new Forms.AESEncrypt(), materialTabControl1.SelectedTab);
+                    case "tabPage5":
+                        OpenChildForm(new Forms.StegoEncrypt(), materialTabControl1.SelectedTab);
                         break;
-                    case 5:
-                        OpenChildForm(new Forms.PNGSteganography(), materialTabControl1.SelectedTab);
+                    case "tabPage6":
+                        OpenChildForm(new Forms.StegoDecrypt(), materialTabControl1.SelectedTab);
                         break;
-                    case 6:
+                    case "tabPage7":
                         OpenChildForm(new Forms.About(), materialTabControl1.SelectedTab);
                         break;
                 }

@@ -106,7 +106,7 @@ namespace K2Lin_Crypto
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(1266, 627);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "AES Encrypt";
+            this.tabPage5.Text = "Stego Encrypt";
             this.tabPage5.UseVisualStyleBackColor = true;
             //
             // tabPage6
@@ -116,7 +116,7 @@ namespace K2Lin_Crypto
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(1266, 627);
             this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "PNG Stegano";
+            this.tabPage6.Text = "Stego Decrypt";
             this.tabPage6.UseVisualStyleBackColor = true;
             //
             // tabPage7

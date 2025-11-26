@@ -84,12 +84,6 @@
     <Compile Include="Forms\About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PNG-Steganography.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\PNG-Steganography.Designer.cs">
-      <DependentUpon>PNG-Steganography.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\RSA-Decryption.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,12 +96,6 @@
     <Compile Include="Forms\RSA-Encryption.Designer.cs">
       <DependentUpon>RSA-Encryption.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AES-Cryption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AES-Cryption.Designer.cs">
-      <DependentUpon>AES-Cryption.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\RSA-Keypairs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +107,18 @@
     </Compile>
     <Compile Include="Forms\Mainmenu.Designer.cs">
       <DependentUpon>Mainmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StegoEncrypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StegoEncrypt.Designer.cs">
+      <DependentUpon>StegoEncrypt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StegoDecrypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StegoDecrypt.Designer.cs">
+      <DependentUpon>StegoDecrypt.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\AES-PBKDF2 Encrypt.cs" />
     <Compile Include="Modules\SteganographyModule.cs" />
@@ -148,21 +148,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\About.zh-Hans.resx">
       <DependentUpon>About.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AES-Cryption.en.resx">
-      <DependentUpon>AES-Cryption.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AES-Cryption.zh-Hans.resx">
-      <DependentUpon>AES-Cryption.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PNG-Steganography.en.resx">
-      <DependentUpon>PNG-Steganography.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PNG-Steganography.resx">
-      <DependentUpon>PNG-Steganography.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PNG-Steganography.zh-Hans.resx">
-      <DependentUpon>PNG-Steganography.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RSA-Decryption.en.resx">
       <DependentUpon>RSA-Decryption.cs</DependentUpon>
